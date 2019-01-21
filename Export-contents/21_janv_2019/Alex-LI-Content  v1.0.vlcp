@@ -1,0 +1,552 @@
+{
+  "name":"Alex-LI-Content",
+  "namespace":"showroom.france",
+  "contentPackId":"showroom.france",
+  "framework":"#9c4",
+  "version":"2.4",
+  "extractedFields":[ {
+    "displayName":"Alex _ DRS from",
+    "preContext":"from ",
+    "postContext":" to",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fifwgk6bal4qeiustebthe33n",
+    "constraints":"{\"searchTerms\":\"\",\"filters\":[{\"internalName\":\"vc_event_type\",\"displayName\":\"vc_event_type\",\"operator\":\"CONTAINS\",\"value\":\"com.vmware.vim25.drsvmmigratedevent\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"Alex _ DRS to",
+    "preContext":"to ",
+    "postContext":" in",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fifwgk6bal4qeiusteb2g6000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vc_event_type\",\"displayName\":\"vc_event_type\",\"operator\":\"CONTAINS\",\"value\":\"com.vmware.vim25.drsvmmigratedevent\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"Alex_TITO_HTTP_Protocol",
+    "preContext":"Appel de TITO via ",
+    "postContext":";TITO-App",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fifwgk6c7krevit27jbkfiuc7kbzg65dpmnxwy000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Tito-Home",
+    "preContext":"TITO-App;home=\"",
+    "postContext":"\";work=",
+    "regexValue":".*",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fkruxi3znjbxw2zi0",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Tito-Work",
+    "preContext":";work=\"",
+    "postContext":"\";",
+    "regexValue":".*",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fkruxi3znk5xxe2y0",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"alex-vra-CatalogItemName",
+    "preContext":"CatalogItemName=\"",
+    "postContext":"\" ServiceName=",
+    "regexValue":".*",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fmfwgk6bnozzgclkdmf2gc3dpm5exizlnjzqw2zi0",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"latence vra",
+    "preContext":"0000\\]\\[",
+    "postContext":" ms",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fnrqxizlomnssa5tsme000000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"vmw_vc_vmotion_from",
+    "preContext":"from ",
+    "postContext":"\\, ",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0",
+    "constraints":"{\"filters\":[{\"internalName\":\"vc_event_type\",\"displayName\":\"vc_event_type\",\"operator\":\"CONTAINS\",\"value\":\"com.vmware.vim25.vmmigratedevent\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vc_vmotion_to",
+    "preContext":"to ",
+    "postContext":"\\, ",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000",
+    "constraints":"{\"filters\":[{\"internalName\":\"vc_event_type\",\"displayName\":\"vc_event_type\",\"operator\":\"CONTAINS\",\"value\":\"com.vmware.vim25.vmmigratedevent\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vm_vmx_name",
+    "preContext":"vm(Path=|:|=| )/vmfs/volumes/(.*?/){1,2}",
+    "postContext":"\\.vmx",
+    "regexValue":".*?",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wnvpxm3lyl5xgc3lf",
+    "constraints":"{\"filters\":[{\"hidden\":false,\"internalName\":\"appname\",\"displayName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"hostd*,fdm,vpxa\",\"fieldType\":\"NUMBER\",\"isExtracted\":false}]}",
+    "info":null
+  }, {
+    "displayName":"vmw_vro_wf_completed",
+    "preContext":"End of workflow .*\\S, state: ",
+    "postContext":"",
+    "regexValue":".*\\S",
+    "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wojxv653gl5rw63lqnrsxizle",
+    "constraints":"{\"filters\":[{\"internalName\":\"appname\",\"displayName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"vco\",\"fieldType\":\"NUMBER\",\"isExtracted\":false,\"hidden\":false}],\"searchTerms\":\"vco\"}",
+    "info":null
+  } ],
+  "queries":[ {
+    "name":"Migration - DRS Completed",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1504706287140,\"endTimeMillis\":1504709896360,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DRS migrated\"},{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"172.18.4.30\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"Migration - VMotion Completed",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1504686565665,\"endTimeMillis\":1504690174083,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"Migration\"},{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"172.18.4.30\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"completed\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Container's Log",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1514902117065,\"endTimeMillis\":1515074917064,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"CONTAINS\",\"value\":\"journal\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/messages\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Delete Service",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1515057043001,\"endTimeMillis\":1515057343207,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Master",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1514990221824,\"endTimeMillis\":1514993822179,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra-vm-0061.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"etcd,kube*\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"DNS - ADD into DNS - cpod-VR",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500981988728,\"endTimeMillis\":1500985588727,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QADD\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q.\\\\\\\\E(.*)\\\\\\\\Qcpod\\\\\\\\E\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qvr.shwrfr.mooo.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Create OR delete POD",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1516113377069,\"endTimeMillis\":1516113677068,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"deletepod,created pod\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"PODS -",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1514991201703,\"endTimeMillis\":1514994802539,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra-vm-0061.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"etcd,kube*\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - POD - Creation",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1516093971877,\"endTimeMillis\":1516115571876,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra-vm-0061.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"] Pod * created labels\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - POD - Deletion",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1516115159532,\"endTimeMillis\":1516118759531,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra-vm-0061.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"deletePod called on pod *\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Service Created",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1515054726605,\"endTimeMillis\":1515055026604,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false}],\"field\":{\"internalName\":\"event_type\",\"displayName\":\"event_type\",\"displayNamespace\":null}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false},\"piqlFunctionField\":\"event_type\",\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"DNS - REMOVE from DNS - vpod-VR",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500984811425,\"endTimeMillis\":1500985111784,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QREMOVE\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q.\\\\\\\\E(.*)\\\\\\\\Qcpod\\\\\\\\E\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qvr.shwrfr.mooo.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"DNS - CLEAN DNS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501061070040,\"endTimeMillis\":1501233872261,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QCLEAN\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q.\\\\\\\\E(.*)$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"FROM 63",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1516803676001,\"endTimeMillis\":1516804178443,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra-vm-0063.cpod-vr.shwrfr.mooo.com\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  } ],
+  "alerts":[ ],
+  "dashboardSections":[ {
+    "views":[ {
+      "name":"Alex - DNS cpod vR",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"ADD into DNS",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500981988728,\"endTimeMillis\":1500985588727,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QADD\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q.\\\\\\\\E(.*)\\\\\\\\Qcpod\\\\\\\\E\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qvr.shwrfr.mooo.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        }, {
+          "name":"ADD into DNS - List",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500981988728,\"endTimeMillis\":1500985588727,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QADD\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q.\\\\\\\\E(.*)\\\\\\\\Qcpod\\\\\\\\E\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qvr.shwrfr.mooo.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null,
+          "columns":[ {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"REMOVE from DNS",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500984811425,\"endTimeMillis\":1500985111784,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QREMOVE\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q.\\\\\\\\E(.*)\\\\\\\\Qcpod\\\\\\\\E\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qvr.shwrfr.mooo.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        }, {
+          "name":"REMOVE from DNS - List",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500984811425,\"endTimeMillis\":1500985111784,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QREMOVE\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q.\\\\\\\\E(.*)\\\\\\\\Qcpod\\\\\\\\E\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qvr.shwrfr.mooo.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null,
+          "columns":[ {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"CLEAN DNS",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501061070040,\"endTimeMillis\":1501233872261,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QCLEAN\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q.\\\\\\\\E(.*)$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        }, {
+          "name":"CLEAN DNS - List",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501061070040,\"endTimeMillis\":1501233872261,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QCLEAN\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q.\\\\\\\\E(.*)$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null,
+          "columns":[ {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      } ]
+    }, {
+      "name":"Oracle - Licensing",
+      "constraints":[ {
+        "internalName":"vc_vm_name",
+        "operator":"CONTAINS"
+      } ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Nbre de VMotions (DRS exclu)",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501538400000,\"endTimeMillis\":1506722400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ANY\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[{\"displayName\":\"vmw_vc_vmotion_from\",\"preContext\":\"from \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vc_vmotion_to\",\"preContext\":\"to \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"vCenters concernés par VMotion",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501538400000,\"endTimeMillis\":1506722400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false}],\"field\":{\"internalName\":\"vmw_datacenter\",\"displayName\":\"vmw_datacenter\",\"displayNamespace\":null}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false},\"piqlFunctionField\":\"vmw_datacenter\",\"fieldConstraints\":[{\"internalName\":\"vmw_vcenter\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vcenter\",\"internalName\":\"vmw_vcenter\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"vmw_vc_vmotion_from\",\"preContext\":\"from \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vc_vmotion_to\",\"preContext\":\"to \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"Datacenters concernés par VMotion",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501538400000,\"endTimeMillis\":1506722400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false}],\"field\":{\"internalName\":\"vmw_datacenter\",\"displayName\":\"vmw_datacenter\",\"displayNamespace\":null}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false},\"piqlFunctionField\":\"vmw_datacenter\",\"fieldConstraints\":[{\"internalName\":\"vmw_datacenter\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_datacenter\",\"internalName\":\"vmw_datacenter\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcenter\",\"internalName\":\"vmw_vcenter\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"vmw_vc_vmotion_from\",\"preContext\":\"from \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vc_vmotion_to\",\"preContext\":\"to \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"Clusters concernés par VMotion",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501538400000,\"endTimeMillis\":1506722400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false}],\"field\":{\"internalName\":\"vmw_cluster\",\"displayName\":\"vmw_cluster\",\"displayNamespace\":null}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false},\"piqlFunctionField\":\"vmw_cluster\",\"fieldConstraints\":[{\"internalName\":\"vmw_cluster\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_cluster\",\"internalName\":\"vmw_cluster\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vcenter\",\"internalName\":\"vmw_vcenter\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_datacenter\",\"internalName\":\"vmw_datacenter\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"vmw_vc_vmotion_from\",\"preContext\":\"from \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vc_vmotion_to\",\"preContext\":\"to \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"VM concernées (VMotion, DRS exclu)",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501538400000,\"endTimeMillis\":1506722400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ANY\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vc_vm_name\",\"internalName\":\"vc_vm_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"vmw_vc_vmotion_from\",\"preContext\":\"from \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vc_vmotion_to\",\"preContext\":\"to \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"Detail des VMotions (DRS Exclu)",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501538400000,\"endTimeMillis\":1506722400000,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vc_vmotion_from\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vc_vmotion_to\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vc_vm_name\",\"internalName\":\"vc_vm_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"vmw_vc_vmotion_from\",\"preContext\":\"from \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vc_vmotion_to\",\"preContext\":\"to \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"vMotion operations by source and destination host",
+          "info":"<span style=\"font-weight: bold;\">IMPORTANT:</span><span>&nbsp;This widget does not provide any value unless you have drilled down to the particular VMs you wish to perform auditing on.</span><br><br><span>This widget returns all hosts which were involved in a vMotion operation. As you drill down to particular VMs you are concerned with licensing this widget will tell you which hosts hosted the VM over the given time range due to migrations. This makes it auditing and license compliance easy.</span><br>",
+          "gridWidth":"1",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1432001327368,\"endTimeMillis\":1432087727367,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"operator\":\"EXISTS\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_vc_vmotion_from\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"vmw_vc_vmotion_to\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"vmw_vc_vmotion_from\",\"preContext\":\"from \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7mzzg63i0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"},{\"displayName\":\"vmw_vc_vmotion_to\",\"preContext\":\"to \",\"postContext\":\"\\\\, \",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wmnpxm3lporuw63s7orxq0000\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"vc_event_type\\\",\\\"displayName\\\":\\\"vc_event_type\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"com.vmware.vim25.vmmigratedevent\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      } ]
+    }, {
+      "name":"Alex - K8S - Container's logs",
+      "constraints":[ {
+        "internalName":"hostname",
+        "operator":"CONTAINS"
+      }, {
+        "internalName":"text",
+        "operator":"CONTAINS"
+      } ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Container's logs volume",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1536317781574,\"endTimeMillis\":1536321381573,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/messages\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vRA-VM-0817 journal:,vRA-VM-0818 journal:\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Container's log",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500979132444,\"endTimeMillis\":1536321430789,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/messages\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vRA-VM-0817 journal:,vRA-VM-0818 journal:\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_source_path",
+            "displayName":"source",
+            "displayNamespace":null
+          }, {
+            "internalName":"hostname",
+            "displayName":"hostname",
+            "displayNamespace":null
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Pod creation from RC",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"pod\",\"startTimeMillis\":1545054945243,\"endTimeMillis\":1545058545242,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"'successfulcreate' created pod:\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        } ]
+      } ]
+    }, {
+      "name":"TITO app",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"TITO - Successful Requests",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\\\"Tito-App;home=\\\"\",\"startTimeMillis\":1516203355575,\"endTimeMillis\":1516206955574,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"TITO - Over Time",
+          "info":"",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\\\"Tito-App;home=\\\"\",\"startTimeMillis\":1516203389995,\"endTimeMillis\":1516206990131,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"TITO - Trajets Détails",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"Tito-App\",\"startTimeMillis\":1515489058038,\"endTimeMillis\":1515492658037,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Tito-Home\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fkruxi3znjbxw2zi0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"Tito-Work\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fkruxi3znk5xxe2y0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"Tito-Home\",\"preContext\":\"TITO-App;home=\\\"\",\"postContext\":\"\\\";work=\",\"regexValue\":\".*\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fkruxi3znjbxw2zi0\",\"constraints\":null},{\"displayName\":\"Tito-Work\",\"preContext\":\";work=\\\"\",\"postContext\":\"\\\";\",\"regexValue\":\".*\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fkruxi3znk5xxe2y0\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"TITO - Trajets",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1516179189464,\"endTimeMillis\":1516182789463,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"TITO-App;home=\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fkruxi3znk5xxe2y0",
+            "displayName":"Tito-Work",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcnk7onug653sn5xw2ltgojqw4y3fkruxi3znjbxw2zi0",
+            "displayName":"Tito-Home",
+            "displayNamespace":"Unknown"
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Repartition des appels : API (get) / UI (post)",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1516263493111,\"endTimeMillis\":1516267093269,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ANY\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"Appel de TITO via * ;TITO-App\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex_TITO_HTTP_Protocol\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fifwgk6c7krevit27jbkfiuc7kbzg65dpmnxwy000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"Alex_TITO_HTTP_Protocol\",\"preContext\":\"Appel de TITO via \",\"postContext\":\";TITO-App\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fifwgk6c7krevit27jbkfiuc7kbzg65dpmnxwy000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Wavefront Error",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500979132444,\"endTimeMillis\":1542657600428,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"wavefront - error\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      } ]
+    }, {
+      "name":"Alex - vRA",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Requested Blueprints",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"inline\",\"piepercentage\":true,\"piestyle\":\"donut\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1524740933534,\"endTimeMillis\":1524744534216,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/vmware/vcac/catalina.out\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"CatalogItemRequest\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"Request submitted\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"alex-vra-CatalogItemName\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fmfwgk6bnozzgclkdmf2gc3dpm5exizlnjzqw2zi0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"alex-vra-CatalogItemName\",\"preContext\":\"CatalogItemName=\\\"\",\"postContext\":\"\\\" ServiceName=\",\"regexValue\":\".*\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fmfwgk6bnozzgclkdmf2gc3dpm5exizlnjzqw2zi0\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Requested Blueprints",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"inline\",\"piepercentage\":true,\"piestyle\":\"donut\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1524658212831,\"endTimeMillis\":1524744613452,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/vmware/vcac/catalina.out\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"CatalogItemRequest\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"Request submitted\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"alex-vra-CatalogItemName\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fmfwgk6bnozzgclkdmf2gc3dpm5exizlnjzqw2zi0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"alex-vra-CatalogItemName\",\"preContext\":\"CatalogItemName=\\\"\",\"postContext\":\"\\\" ServiceName=\",\"regexValue\":\".*\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fmfwgk6bnozzgclkdmf2gc3dpm5exizlnjzqw2zi0\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Event Broker Executions",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"inline\",\"piepercentage\":true,\"piestyle\":\"donut\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"event-broker-service\",\"startTimeMillis\":1524660133119,\"endTimeMillis\":1524746533118,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"product\",\"operator\":\"CONTAINS\",\"value\":\"vro\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/vco/app-server/integration-server.log\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"event-broker-service\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"wfname\",\"internalName\":\"wfname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Event Broker Executions",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"inline\",\"piepercentage\":true,\"piestyle\":\"donut\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"event-broker-service\",\"startTimeMillis\":1524660234830,\"endTimeMillis\":1524746634978,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"product\",\"operator\":\"CONTAINS\",\"value\":\"vro\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/vco/app-server/integration-server.log\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"event-broker-service\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"wfname\",\"internalName\":\"wfname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"vRO Workflows Completed",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":true,\"piestyle\":\"donut\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1524742332893,\"endTimeMillis\":1524745932892,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"product\",\"operator\":\"CONTAINS\",\"value\":\"vro\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wojxv653gl5rw63lqnrsxizle\",\"operator\":\"CONTAINS\",\"value\":\"completed\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"wfname\",\"internalName\":\"wfname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"vmw_vro_wf_completed\",\"preContext\":\"End of workflow .*\\\\S, state: \",\"postContext\":\"\",\"regexValue\":\".*\\\\S\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wojxv653gl5rw63lqnrsxizle\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"appname\\\",\\\"displayName\\\":\\\"appname\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vco\\\",\\\"fieldType\\\":\\\"NUMBER\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"vco\\\"}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"vRO Workflows Completed",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":true,\"piestyle\":\"donut\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1524660290847,\"endTimeMillis\":1524746691610,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"vra.cpod-vr.shwrfr.mooo.com\"},{\"internalName\":\"product\",\"operator\":\"CONTAINS\",\"value\":\"vro\"},{\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wojxv653gl5rw63lqnrsxizle\",\"operator\":\"CONTAINS\",\"value\":\"completed\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"wfname\",\"internalName\":\"wfname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"extractedFields\":[{\"displayName\":\"vmw_vro_wf_completed\",\"preContext\":\"End of workflow .*\\\\S, state: \",\"postContext\":\"\",\"regexValue\":\".*\\\\S\",\"internalName\":\"ibadcnk7onug653sn5xw2ltgojqw4y3fozwxox3wojxv653gl5rw63lqnrsxizle\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"appname\\\",\\\"displayName\\\":\\\"appname\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"vco\\\",\\\"fieldType\\\":\\\"NUMBER\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}],\\\"searchTerms\\\":\\\"vco\\\"}\"}]}",
+          "messageQuery":""
+        } ]
+      } ]
+    } ],
+    "header":""
+  } ],
+  "agentClasses":[ {
+    "name":"cpod-VR-DNS",
+    "info":"",
+    "agentConfig":"[filelog|dns]\ndirectory=/root/alex\ninclude=dns.log\nenabled=yes\n"
+  }, {
+    "name":"TITO VMs and K8S nodes",
+    "info":"Generic Linux agent group to collect events from standard log locations.",
+    "agentConfig":"[filelog|auth]\ndirectory=/var/log\ninclude=auth.log;auth.log.?\nparser=syslog_parser\nenabled=no\n\n[filelog|messages]\ndirectory=/var/log\ninclude=messages;messages.?\nparser=syslog_parser\n\n[filelog|syslog]\ndirectory=/var/log\ninclude=syslog;syslog.?\nparser=syslog_parser\n\n[parser|syslog_parser]\nbase_parser=clf\nformat=%t %i %{appname}i: %M\nfield_decoder={\"appname\":\"syslog_appname_parser\"}\nexclude_fields=log_message\n\n[parser|syslog_appname_parser]\nbase_parser=clf\nformat=%{appname}i[%{thread_id}i]\n\n[filelog|httpd]\ndirectory=/var/log/httpd\ninclude=error_log\n"
+  }, {
+    "name":"ALEX VM Perso",
+    "info":"This is the agent group configuration for Microsoft - Windows content pack.<br>You can find this under Administration -&gt; Management -&gt; Agents -&gt; All Agents drop down.<br>To apply,copy this template to active groups , add filters and save.<br>",
+    "agentConfig":"[winlog|Application]\nchannel=Application\n\n[winlog|Security]\nchannel=Security\n\n[winlog|System]\nchannel=System\n\n[winlog|WindowsFirewall]\nchannel=Microsoft-Windows-Windows Firewall With Advanced Security/Firewall\n\n[winlog|UAC]\nchannel=Microsoft-Windows-UAC/Operational\n"
+  }, {
+    "name":"vRealize Automation 7 - Linux",
+    "info":"Use this agent group configuration for all vRA virtual appliances.",
+    "agentConfig":"[filelog|vra-access]\ndirectory=/var/log/vmware/vcac\ninclude=access*\nparser=vra-access-parser\ntags={\"product\":\"vra\",\"component\":\"tomcat\"}\n\n[parser|vra-access-parser]\nbase_parser=clf\nformat=%h [%t][%{request_time_ms}i ms] \"%r\" %s %b [%{thread}i]\nfield_decoder={\"request\":\"vra-access-request-decoder\"}\n\n[parser|vra-access-request-decoder]\nbase_parser=csv\ndelimiter=\" \"\nfields=request_method,requested_url,http_ver\nfield_decoder={\"http_ver\":\"vra-access-ver-parser\"}\n\n[parser|vra-access-ver-parser]\nbase_parser=csv\ndelimiter=\"/\"\nfields=http_proto_name,http_ver\n\n[filelog|vra-config]\ndirectory=/var/log/vmware/vcac\ninclude=vcac-config*\nevent_marker=^\\d\nparser=vra-config-parser\ntags={\"product\":\"vra\"}\n\n[parser|vra-config-parser]\nbase_parser=clf\nformat=%i %i %{appname}i: %{priority}i  %{java_class}i:%i %M\nexclude_fields=log_message\n\n[filelog|vra-catalina]\ndirectory=/var/log/vmware/vcac\ninclude=catalina.out*\nexclude=catalina.out*.*\nevent_marker=^\\d\nparser=vra-catalina-parser\ntags={\"product\":\"vra\"}\n\n[parser|vra-catalina-parser]\nbase_parser=clf\nformat=%t %{appname}i: %M\nfield_decoder={\"log_message\":\"vra-catalina-decoder\"}\nnext_parser=vra-kvp-parser\n\n[parser|vra-catalina-decoder]\nbase_parser=clf\nformat=[%i] %i - [%i] %M\nnext_parser=vra-catalina-decoder2\n\n[parser|vra-catalina-decoder2]\nbase_parser=clf\nformat=[%i] %i - %M\n\n[parser|vra-kvp-parser]\nbase_parser=kvp\ndelimiter=\"^[] \\t\\r\\n$\"\nfields=component,priority,thread,tenant,context,token,type,name\n\n[filelog|vra-system]\ndirectory=/var/log/vmware/vcac\ninclude=system-config-history*;telemetry*\nparser=vra-system-parser\nexclude_fields=request\ntags={\"product\":\"vra\"}\n\n[parser|vra-system-parser]\nbase_parser=clf\nformat=%t %i %{priority}i  (%{thread}i) [%{authentication}i] %{java_class}i - %M\nfield_decoder={\"authentication\":\"vra-authentication-decoder\",\"log_message\":\"vra-system-decoder\"}\nexclude_fields=log_message;authentication\nnext_parser=vra-telemetry-parser\n\n[parser|vra-authentication-decoder]\nbase_parser=csv\ndelimiter=\";\"\nfields=tenant, user_uuid, remote_host\n\n[parser|vra-system-decoder]\nbase_parser=clf\nformat=%{status}i %{operation}i (%r)\nfield_decoder={\"referer\":\"vra-system-request-decoder\"}\n\n[parser|vra-system-request-decoder]\nbase_parser=csv\nfields=requested_url, , mime_type, request_method, ,\n\n[parser|vra-telemetry-parser]\nbase_parser=clf\nformat=%t %i %i: %M\nfield_decoder={\"log_message\":\"vra-telemetry-decoder\"}\nexclude_fields=log_message\n\n[parser|vra-telemetry-decoder]\nbase_parser=kvp\ndelimiter=\"^[] \\t\\r\\n$\"\nfields=component,type,name,tenantId\n\n[filelog|vra-tomcat]\ndirectory=/var/log/vmware/vcac\ninclude=catalina*;localhost*\nexclude=catalina.out\nevent_marker=^\\w{3} \\d{2}, \\d{4}\nparser=vra-tomcat-parser\ntags={\"product\":\"vra\",\"component\":\"tomcat\"}\n\n[parser|vra-tomcat-parser]\nbase_parser=clf\nformat=%i %i, %i %i %i %{java_class}i %{operation}i\\n%{priority}i: %M\nexclude_fields=log_message\nfield_decoder={\"log_message\":\"vra-tomcat-exception-decoder\"}\n\n[parser|vra-tomcat-exception-decoder]\nbase_parser=clf\nformat=%i\\n%{java_exception_stack}i\\n\\tat %M\n\n[filelog|vra-vidm]\ndirectory=/var/log/vmware/horizon\ninclude=admin-tool*;configurator*;connector*;horizon*\nevent_marker=^\\d{4}-\\d{2}-\\d{2}\nparser=vra-vidm-parser\ntags={\"product\":\"vra\",\"component\":\"vidm\"}\n\n[parser|vra-vidm-parser]\nbase_parser=clf\nformat=%t %{priority}i  (%{thread}i) [%{authentication}i] %{java_class}i - %M\nfield_decoder={\"authentication\":\"vra-vidm-authentication-decoder\",\"log_message\":\"vra-vidm-message-decoder\"}\nexclude_fields=log_message;authentication\n\n[parser|vra-vidm-authentication-decoder]\nbase_parser=csv\ndelimiter=\";\"\nfields=tenant, user_uuid, remote_host\nfield_decoder={\"tenant\":\"vra-vidm-tenant-decoder\"}\n\n[parser|vra-vidm-tenant-decoder]\nbase_parser=csv\ndelimiter=\"@\"\nfields=domain, tenant\nexclude_fields=domain\n\n[parser|vra-vidm-message-decoder]\nbase_parser=clf\nformat=%{status}i %{operation}i (%{referer}i)\nfield_decoder={\"referer\":\"vra-vidm-referer-decoder\"}\n\n[parser|vra-vidm-referer-decoder]\nbase_parser=csv\nfields=url, , mime_type, method, ,\n\n[filelog|vra-vidm-access]\ndirectory=/var/log/vmware/horizon\ninclude=access*\nparser=vra-vidm-access-parser\ntags={\"product\":\"vra\",\"component\":\"tomcat\"}\n\n[parser|vra-vidm-access-parser]\nbase_parser=clf\nformat=%h [%t][%{request_time_ms}i ms] \"%r\" %s %b [%{thread}i]\nfield_decoder={\"request\":\"vra-vidm-access-request-decoder\"}\n\n[parser|vra-vidm-access-request-decoder]\nbase_parser=csv\ndelimiter=\" \"\nfields=request_method,requested_url,http_ver\nfield_decoder={\"http_ver\":\"vra-vidm-access-ver-parser\"}\n\n[parser|vra-vidm-access-ver-parser]\nbase_parser=csv\ndelimiter=\"/\"\nfields=http_proto_name,http_ver\n\n[filelog|vra-vidm-tomcat]\ndirectory=/var/log/vmware/horizon\ninclude=catalina*;localhost*\nevent_marker=^\\w{3} \\d{2}, \\d{4}\nparser=vra-vidm-tomcat-parser\ntags={\"product\":\"vra\",\"component\":\"tomcat\"}\n\n[parser|vra-vidm-tomcat-parser]\nbase_parser=clf\nformat=%i %i, %i %i %i %{java_class}i %{operation}i\\n%{priority}i: %M\nexclude_fields=log_message\nfield_decoder={\"log_message\":\"vra-vidm-tomcat-exception-decoder\"}\n\n[parser|vra-vidm-tomcat-exception-decoder]\nbase_parser=clf\nformat=%i\\n%{java_exception_stack}i\\n\\tat %M\n\n[filelog|alex-vra-catalina]\ndirectory=/var/log/vmware/vcac\ninclude=catalina.out\ntags={\"product\":\"vra\"}\nparser=vra-catalina-parser\n"
+  }, {
+    "name":"vRealize Automation 7 - Windows",
+    "info":"<span>Use this agent group configuration for all IAAS systems.</span>",
+    "agentConfig":"[filelog|vra-agent-vcenter-70x]\n; IMPORTANT: The agent directory name may be different than the\n; default & examples below. Edit the directory option as applicable.\n; IMPORTANT: If you have multiple copies of an agent installed\n; You will need to manually copy this section so each\n; has its own configuration section\n; IMPORTANT: Different versions of vRA require different event\n; markers. The examples below are for vRA 7.0 & 7.0.1\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Agents\\vCenter\\logs\\\nevent_marker=^\\d{4}-\\d{1,2}-\\d{1,2}T\\d{1,2}:\\d{2}:\\d{2}.\\d{3}Z\ntags={\"product\":\"vra\",\"component\":\"agent\"}\nparser=vra-iaas-agent-parser\n\n[filelog|vra-agent-vcns]\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Agents\\vcns\\logs\\\nevent_marker=^\\d{4}-\\d{1,2}-\\d{1,2}T\\d{1,2}:\\d{2}:\\d{2}.\\d{3}Z\ntags={\"product\":\"vra\",\"component\":\"agent\"}\nparser=vra-iaas-agent-parser\n\n[filelog|vra-agent-nsx]\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Agents\\nsx\\logs\\\nevent_marker=^\\d{4}-\\d{1,2}-\\d{1,2}T\\d{1,2}:\\d{2}:\\d{2}.\\d{3}Z\ntags={\"product\":\"vra\",\"component\":\"agent\"}\nparser=vra-iaas-agent-parser\n\n[filelog|vra-agent-vdiagent]\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Agents\\VDIagent\\logs\\\nevent_marker=^\\d{4}-\\d{1,2}-\\d{1,2}T\\d{1,2}:\\d{2}:\\d{2}.\\d{3}Z\ntags={\"product\":\"vra\",\"component\":\"agent\"}\nparser=vra-iaas-agent-parser\n\n[filelog|vra-dem]\n; IMPORTANT: The DEM directory name may be different than the\n; default below. Edit the directory option as applicable.\n; IMPORTANT: If you have multiple DEM workers installed\n; You will need to manually copy this section so each\n; has its own configuration section\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Distributed Execution Manager\\DEM\\Logs\\\ninclude=*All.log\nevent_marker=^\\[\\w\\w\\w:\\d{4}-\\d{2}-\\d{2}\ntags={\"product\":\"vra\",\"component\":\"dem\"}\nparser=vra-iaas-parser\n\n[filelog|vra-dem-metrics]\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Distributed Execution Manager\\DEM\\Logs\\\ninclude=*Metrics.log\ntags={\"product\":\"vra\",\"component\":\"dem\"}\nparser=vra-iaas-metrics-parser\n\n[filelog|vra-deo]\n; IMPORTANT: The DEO directory name may be different than the\n; default below. Edit the directory option as applicable.\n; IMPORTANT: If you have multiple DEO workers installed\n; You will need to manually copy this section so each\n; has its own configuration section per host\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Distributed Execution Manager\\DEO\\Logs\\\ninclude=*All.log\nevent_marker=^\\d{4}-\\d{1,2}-\\d{1,2}T\\d{1,2}:\\d{2}:\\d{2}.\\d{3}Z\ntags={\"product\":\"vra\",\"component\":\"deo\"}\nparser=vra-iaas-parser\n\n[filelog|vra-deo2]\n; IMPORTANT: The DEO directory name may be different than the\n; default below. Edit the directory option as applicable.\n; IMPORTANT: If you have multiple DEO workers installed\n; You will need to manually copy this section so each\n; has its own configuration section per host\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Distributed Execution Manager\\iaas-01a.corp.localDEO\\Logs\\\ninclude=*All.log\nevent_marker=^\\d{4}-\\d{1,2}-\\d{1,2}T\\d{1,2}:\\d{2}:\\d{2}.\\d{3}Z\ntags={\"product\":\"vra\",\"component\":\"deo\"}\nparser=vra-iaas-parser\n\n[filelog|vra-ma]\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Management Agent\\Logs\\\ninclude=*All.log\nevent_marker=^\\[\\w\\w\\w:\\d{4}-\\d{2}-\\d{2}\ntags={\"product\":\"vra\",\"component\":\"ma\"}\nparser=vra-iaas-web-parser\n\n[filelog|vra-server]\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Server\\Logs\\\ninclude=*All.log\nevent_marker=^\\[\\w\\w\\w:\\d{4}-\\d{2}-\\d{2}\ntags={\"product\":\"vra\",\"component\":\"server\"}\nparser=vra-iaas-parser\n\n[filelog|vra-mm]\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Server\\Model Manager Web\\Logs\\\ninclude=*Repository.log\nevent_marker=^\\[\\w\\w\\w:\\d{4}-\\d{2}-\\d{2}\ntags={\"product\":\"vra\",\"component\":\"mm\"}\nparser=vra-iaas-web-parser\n\n[filelog|vra-web]\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\Server\\Website\\Logs\\\ninclude=Web*\nevent_marker=^\\[\\w\\w\\w:\\d{4}-\\d{2}-\\d{2}\ntags={\"product\":\"vra\",\"component\":\"web\"}\nparser=vra-iaas-web-parser\n\n[filelog|vra-install]\ndirectory=C:\\Program Files (x86)\\VMware\\vCAC\\InstallLogs\\\n; Cannot set event_marker or parsers given differences between files\ntags={\"product\":\"vra\",\"component\":\"install\"}\n\n[parser|vra-iaas-agent-parser]\nbase_parser=clf\nformat=[%t] [%{priority}i]: Thread-Id: %{thread}i %M\nexclude_fields=log_message\nfield_decoder={\"log_message\":\"vra-iaas-exception-decoder\"}\n\n[parser|vra-iaas-parser]\nbase_parser=clf\nformat=[UTC:%t Local:%i %i] [%{priority}i]: Thread-Id: %{thread}i %M\nexclude_fields=log_message\nfield_decoder={\"log_message\":\"vra-iaas-exception-decoder\"}\nnext_parser=vra-iaas-parser2\n\n[parser|vra-iaas-parser2]\nbase_parser=clf\nformat=[UTC:%t Local:%i %i] [%{priority}i]: %M\nexclude_fields=log_message\nfield_decoder={\"log_message\":\"vra-iaas-exception-decoder\"}\nnext_parser=vra-iaas-kvp-parser\n\n[parser|vra-iaas-exception-decoder]\nbase_parser=clf\nformat=%i\\r\\n<boolean>false</boolean>\\r\\n%i\\r\\n%{java_exception_stack}i\\r\\n%M\n\n[parser|vra-iaas-web-parser]\nbase_parser=clf\nformat=[UTC:%t Local:%i %i] [%{priority}i]: Thread-Id: %{thread}i %M\nfield_decoder={\"log_message\":\"vra-iaas-web-transaction-parser\"}\nexclude_fields=log_message\nnext_parser=vra-iaas-kvp-parser\n\n[parser|vra-iaas-web-transaction-parser]\nbase_parser=clf\nformat=- %i  %i (%{transaction}i) %M\nfield_decoder={\"log_message\":\"vra-iaas-web-referer-parser\"}\nexclude_fields=log_message\n\n[parser|vra-iaas-web-referer-parser]\nbase_parser=csv\ndelimiter=\" \"\nfields=request_method,requested_url\nfield_decoder={\"requested_url\":\"vra-iaas-web-url-parser\"}\nnext_parser=vra-iaas-web-response-parser\n\n[parser|vra-iaas-web-url-parser]\nbase_parser=clf\nformat=%{services}i/%i\n\n[parser|vra-iaas-web-response-parser]\nbase_parser=clf\nformat=Response: %{response_status}i %{response_time}i\n\n[parser|vra-iaas-kvp-parser]\nbase_parser=kvp\nfields=thread-id,context,localcontext,token\nfield_rename={\"thread_id\":\"thread\"}\n\n[parser|vra-iaas-metrics-parser]\nbase_parser=clf\nformat=[UTC:%t Local:%i %i] [%{appname}i]: Thread-Id: %{thread}i %M\nfield_decoder={\"log_message\":\"vra-iaas-metrics-kvp-parser\"}\nexclude_fields=log_message\n\n[parser|vra-iaas-metrics-kvp-parser]\nbase_parser=kvp\nfields=*\n"
+  }, {
+    "name":"vRealize Orchestrator Embedded",
+    "info":"<span>This is the agent group configuration for&nbsp;</span><span style=\"font-weight: bold;\">vRealize Orchestrator&nbsp;7.0.1+</span><span>&nbsp;content pack, for use on either the vRA 7.0.1 virtual appliance with embedded vRO, or the standalone vRO virtual appliance. Results may be unpredictable if agent groups are used on an earlier version of vRO.</span><br><span>You can find this under&nbsp;</span><span style=\"font-weight: bold;\">Administration -&gt; Management -&gt; Agents -&gt; All Agents</span><span>&nbsp;drop down.</span><br><span>To apply, copy this template to active groups , add filters and save.</span>",
+    "agentConfig":"[filelog|vro-access]\ndirectory=/var/log/vco/app-server\ninclude=*access*\nparser=vro-access-parser\nexclude_fields=request\ntags={\"product\":\"vro\",\"appname\":\"vco\"}\n\n[parser|vro-access-parser]\nbase_parser=clf\nformat=%t %h - - [%{thread}i] \"%r\" %s %b %i\nfield_decoder={\"request\":\"vro-access-request-decoder\"}\nnext_parser=vro-access-parser2\n\n[parser|vro-access-parser2]\nbase_parser=clf\nformat=%t [%{thread}i] %h - - \"%r\" %s %b %i\nfield_decoder={\"request\":\"vro-access-request-decoder\"}\n\n[parser|vro-access-request-decoder]\nbase_parser=csv\ndelimiter=\" \"\nfields=request_method,requested_url,http_ver\nfield_decoder={\"http_ver\":\"vro-access-ver-parser\"}\n\n[parser|vro-access-ver-parser]\nbase_parser=csv\ndelimiter=\"/\"\nfields=http_proto_name,http_ver\n\n[filelog|vro-metrics]\ndirectory=/var/log/vco/app-server\ninclude=metrics*\nparser=vro-metrics-parser\ntags={\"product\":\"vro\",\"appname\":\"vco\"}\n\n[parser|vro-metrics-parser]\nbase_parser=clf\nformat=%t %M\nexclude_fields=log_message\nnext_parser=vro-metrics-kvp-parser\n\n[parser|vro-metrics-kvp-parser]\nbase_parser=kvp\ndelimiter=\", \"\nfields=type,name,count,min,max,mean,value\nfield_rename={\"count\":\"counter\", \"min\": \"min_time\", \"max\": \"max_time\"}\n\n[filelog|vro-integration-scripting]\ndirectory=/var/log/vco/app-server\ninclude=integration-scripting*\nevent_marker=^\\d{4}-\\d{2}-\\d{2}\nparser=vro-integration-scripting-parser\ntags={\"product\":\"vro\",\"appname\":\"vco\"}\n\n[parser|vro-integration-scripting-parser]\nbase_parser=clf\nformat=%t %{appname}i: %M\nfield_decoder={\"log_message\":\"vro-integration-scripting-decoder\"}\nnext_parser=vro-integration-scripting-kvp-parser\n\n[parser|vro-integration-scripting-decoder]\nbase_parser=clf\nformat=[%i] %M\n\n[parser|vro-integration-scripting-kvp-parser]\nbase_parser=kvp\ndelimiter=\"^[] \\t\\r\\n$\"\nfields=component,priority,user,context,token,wfid,wfname,anctoken,wfstack,instanceid\n\n[filelog|vro-integration-server]\ndirectory=/var/log/vco/app-server\ninclude=integration-server*\nevent_marker=^\\d{4}-\\d{2}-\\d{2}\nparser=vro-integration-server-parser\ntags={\"product\":\"vro\",\"appname\":\"vco\"}\n\n[parser|vro-integration-server-parser]\nbase_parser=clf\nformat=%t %{appname}i: %M\nfield_decoder={\"log_message\":\"vro-integration-server-decoder\"}\nnext_parser=vro-integration-scripting-kvp-parser\n\n[parser|vro-integration-server-decoder]\nbase_parser=clf\nformat=[%i] %M\n\n[parser|vro-exception-decoder]\nbase_parser=clf\nformat=%i\\n%{java_exception_stack}i\\n\\tat %M\n\n[parser|vro-details-decorder]\nbase_parser=clf\nformat=%{user}i:%{operation}i:wfid=%{wfid}i[%i]:token=%{token}i:context=%{context}i\nnext_parser=vro-details-decorder2\n\n[parser|vro-details-decorder2]\nbase_parser=clf\nformat=%{user}i:%{operation}i:wfid=%{wfid}i[%i]:token=%{token}i\n"
+  }, {
+    "name":"TITO - VMs - HTTP",
+    "info":"This agent group contains the most common Apache log formats on Linux. If you are using a non-standard log format then you may need to add your own parsing to this agent group.",
+    "agentConfig":"[filelog|apache-linux-generic]\ndirectory=/var/log/apache2\ninclude=*acc*\nexclude=*ssl*\nexclude_fields=request\nparser=apache-parser-clf\ntags={\"product\":\"apache\"}\n\n[filelog|apache-linux-rhel]\ndirectory=/var/log/httpd\ninclude=*acc*\nexclude=*ssl*\nexclude_fields=request\nparser=apache-parser-clf\ntags={\"product\":\"apache\"}\n\n[parser|apache-parser-clf]\nbase_parser=clf\n; Common Log Format (CLF)\n; If using %{X-forwarded-for}i instead of %h\n; Then enclose %h in quotations: \\\"%h\\\"\nformat=%h %l %u [%t] \\\"%r\\\" %>s %b\nfield_decoder={\"remote_host\":\"apache-remote-host-decoder\",\"request\":\"apache-request-decoder\"}\nnext_parser=apache-parser-ncsa\n\n[parser|apache-parser-ncsa]\nbase_parser=clf\n; NCSA extended/combined log format\n; If using %{X-forwarded-for}i instead of %h\n; Then enclose %h in quotations: \\\"%h\\\"\nformat=%h %l %u [%t] \\\"%r\\\" %>s %b \\\"%{Referer}i\\\" \\\"%{User-agent}i\\\"\nfield_decoder={\"remote_host\":\"apache-remote-host-decoder\",\"request\":\"apache-request-decoder\",\"Referer\":\"apache-referer-decoder\"}\nnext_parser=apache-parser-ncsav\n\n[parser|apache-parser-ncsav]\nbase_parser=clf\n; NCSA extended/combined log format with Virtual Host\n; If using %{X-forwarded-for}i instead of %h\n; Then enclose %h in quotations: \\\"%h\\\"\nformat=%v %h %l %u [%t] \\\"%r\\\" %>s %b \\\"%{Referer}i\\\" \\\"%{User-agent}i\\\"\nfield_decoder={\"server_name\":\"apache-server-name-decoder\",\"remote_host\":\"apache-remote-host-decoder\",\"request\":\"apache-request-decoder\",\"Referer\":\"apache-referer-decoder\"}\n\n[filelog|apache-ssl-linux-generic]\ndirectory=/var/log/apache2\ninclude=*ssl*\nexclude=*err*\nexclude_fields=request\nparser=apache-ssl-parser-clf\ntags={\"product\":\"apache\"}\n\n[filelog|apache-ssl-linux-rhel]\ndirectory=/var/log/httpd\ninclude=*ssl*\nexclude=*err*\nexclude_fields=request\nparser=apache-ssl-parser-clf\ntags={\"product\":\"apache\"}\n\n[parser|apache-ssl-parser-clf]\nbase_parser=clf\n; Common Log Format (CLF)\n; If using %{X-forwarded-for}i instead of %h\n; Then enclose %h in quotations: \\\"%h\\\"\nformat=%t %h %{SSL_PROTOCOL}i %{SSL_CIPHER}i \\\"%r\\\" %b\nfield_decoder={\"remote_host\":\"apache-remote-host-decoder\",\"request\":\"apache-request-decoder\"}\nnext_parser=apache-ssl-parser-ncsa\n\n[parser|apache-ssl-parser-ncsa]\nbase_parser=clf\n; NCSA extended/combined log format\n; If using %{X-forwarded-for}i instead of %h\n; Then enclose %h in quotations: \\\"%h\\\"\nformat=%t %h %{SSL_PROTOCOL}i %{SSL_CIPHER}i \\\"%r\\\" %b \\\"%{Referer}i\\\" \\\"%{User-agent}i\\\"\nfield_decoder={\"remote_host\":\"apache-remote-host-decoder\",\"request\":\"apache-request-decoder\",\"Referer\":\"apache-referer-decoder\"}\nnext_parser=apache-ssl-parser-ncsav\n\n[parser|apache-ssl-parser-ncsav]\nbase_parser=clf\n; NCSA extended/combined log format with Virtual Host\n; If using %{X-forwarded-for}i instead of %h\n; Then enclose %h in quotations: \\\"%h\\\"\nformat=%t %v %h %{SSL_PROTOCOL}i %{SSL_CIPHER}i \\\"%r\\\" %b \\\"%{Referer}i\\\" \\\"%{User-agent}i\\\"\nfield_decoder={\"server_name\":\"apache-server-name-decoder\",\"remote_host\":\"apache-remote-host-decoder\",\"request\":\"apache-request-decoder\",\"Referer\":\"apache-referer-decoder\"}\n\n[parser|apache-server-name-decoder]\nbase_parser=clf\nformat=%v:%p\n\n[parser|apache-remote-host-decoder]\nbase_parser=clf\nformat=%h:%p\n\n[parser|apache-request-decoder]\nbase_parser=csv\ndelimiter=\" \"\nfields=request_method,requested_url,http_ver\nfield_decoder={\"requested_url\":\"apache-url-decoder\",\"http_ver\":\"apache-ver-decoder\"}\n\n[parser|apache-url-decoder]\nbase_parser=clf\nformat=%U?%q\n\n[parser|apache-ver-decoder]\nbase_parser=csv\ndelimiter=\"/\"\nfields=http_proto_name,http_ver\n\n[parser|apache-referer-decoder]\nbase_parser=clf\nformat=%{Referer}i?%{Referer_query_string}i\n\n[filelog|apache-linux-generic-error]\ndirectory=/var/log/apache2\ninclude=*err*\nexclude_fields=log_message\nparser=apache-error-parser\ntags={\"product\":\"apache\"}\n\n[filelog|apache-linux-rhel-error]\ndirectory=/var/log/httpd\ninclude=*err*\nexclude_fields=log_message\nparser=apache-error-parser\ntags={\"product\":\"apache\"}\n\n[parser|apache-error-parser]\nbase_parser=clf\nformat=[%t] [%{severity}i] %M\nnext_parser=apache-error-parser2\n\n[parser|apache-error-parser2]\nbase_parser=clf\nformat=[%t] [%{severity}i] [client %a] %M\n"
+  } ],
+  "aliasFields":[ ],
+  "aliasRules":[ ],
+  "author":"",
+  "url":"",
+  "contentVersion":"1.0",
+  "info":"21 janv 2019"
+}
