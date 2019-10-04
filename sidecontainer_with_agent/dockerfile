@@ -1,0 +1,41 @@
+# creation du container docker avec l'agent log insight
+
+
+FROM photon
+
+
+RUN  tdnf -y update \
+&&   tdnf install -y git awk tar gzip 
+
+
+COPY script.sh  /home/script.sh
+RUN chmod 777 /home/script.sh
+
+CMD /home/script.sh 			  # WORKS
+# ENTRYPOINT ["/home/script.sh"]  # DOES NOT WORK
+
+
+# USE IT THAT WAY
+# docker build -t alexfr75/alex-liagent:1.0 .
+# docker run -d -e "LI_SERVER=1.1.1.300"  -e "LI_VERSION=v4.8.0"  alexfr75/alex-liagent:1.0
+
+
+
+
+
+
+# to do
+# -----
+# - tout faire par git (aussi le fichier script.sh)
+# - le hostname dans LI remonte avec le nom du container... ok ???
+
+
+
+
+
+
+
+
+
+
+
