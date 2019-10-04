@@ -11,7 +11,16 @@ rm -rf /tmp/li
 
 
 # configure agent with Log Insight Server FQDN or IP
-sed -i '8 a hostname='$LI_SERVER'' /var/lib/loginsight-agent/liagent.ini
+# sed -i '8 a hostname='$LI_SERVER'' /var/lib/loginsight-agent/liagent.ini
+
+
+echo "***********LIAGENT CONFIGURATION************" >>   /var/lib/loginsight-agent/liagent.ini
+echo "[server]"              >> /var/lib/loginsight-agent/liagent.ini
+echo "hostname=$LI_SERVER"   >> /var/lib/loginsight-agent/liagent.ini
+echo "[filelog|syslog]"      >> /var/lib/loginsight-agent/liagent.ini
+echo "directory=/var/log"    >> /var/lib/loginsight-agent/liagent.ini
+echo "include=*.*"           >> /var/lib/loginsight-agent/liagent.ini
+
 
 
 # start Log Insight agent
