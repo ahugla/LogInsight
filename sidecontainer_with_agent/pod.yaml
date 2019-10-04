@@ -15,7 +15,7 @@ spec:
 
       # definition du volume de pod
       volumes:
-      - name: appli_log
+      - name: appli-log
         emptyDir: {}
 
       containers:
@@ -26,13 +26,13 @@ spec:
         - name: http
           containerPort: 80
         volumeMounts:
-        - name: appli_log
+        - name: appli-log
           mountPath: /var/log
       # sidecar avec liagent
       - name: liagent
         image: alexfr75/alex-liagent:1.0
         volumeMounts:
-        - name: appli_log
+        - name: appli-log
           mountPath: /var/pod_log
         env:
         - name: LI_SERVER
