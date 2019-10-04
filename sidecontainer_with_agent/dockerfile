@@ -27,7 +27,7 @@ CMD /home/container_start.sh               # WORKS
 # to do
 # -----
 # - share directory for logging : /var/log/pod_logs
-# - le hostname dans LI remonte avec le nom du container... ok ???
+# - le hostname dans LI remonte avec le nom du container... ok ???  OU un TAG = celui de l appli???
 
 
 
