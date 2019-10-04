@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-and-log
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: APPLICATION
+  template:
+    metadata:
+      labels:
+        app: APPLICATION
+    spec:
+      containers:
+      - name: nginx
+        image: alexfr75/nginx:1.1
+        ports:
+        - name: http
+          containerPort: 80
+      - name: liagent
+        image: alexfr75/alex-liagent:1.0
+        env:
+        - name: LI_SERVER
+          value: "1.2.3.4.5"
+        - name: LI_VERSION
+          value: "v4.8.0"
+
