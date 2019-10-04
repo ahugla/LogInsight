@@ -5,14 +5,14 @@ FROM photon
 
 
 RUN  tdnf -y update \
-&&   tdnf install -y git awk tar gzip 
+&&   tdnf install -y git awk tar gzip \
+&&   curl -o /home/container_start.sh https://raw.githubusercontent.com/ahugla/LogInsight/master/sidecontainer_with_agent/container_start.sh \
+&&   chmod 755 /home/container_start.sh
 
 
-COPY script.sh  /home/script.sh
-RUN chmod 777 /home/script.sh
+CMD /home/container_start.sh               # WORKS
+# ENTRYPOINT ["/home/container_start.sh"]  # DOES NOT WORK
 
-CMD /home/script.sh 			  # WORKS
-# ENTRYPOINT ["/home/script.sh"]  # DOES NOT WORK
 
 
 # USE IT THAT WAY
@@ -26,7 +26,6 @@ CMD /home/script.sh 			  # WORKS
 
 # to do
 # -----
-# - tout faire par git (aussi le fichier script.sh)
 # - le hostname dans LI remonte avec le nom du container... ok ???
 
 
