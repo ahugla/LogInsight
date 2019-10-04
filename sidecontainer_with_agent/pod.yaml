@@ -27,7 +27,7 @@ spec:
           containerPort: 80
         volumeMounts:
         - name: appli-log
-          mountPath: /var/log/nginx      # Si /var/log  =>  ne fonctionne pas  could not open error log file: open() "/var/log/nginx/error.log"
+          mountPath: /var/log/nginx
       # sidecar avec liagent
       - name: liagent
         image: alexfr75/alex-liagent:1.0
