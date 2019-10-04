@@ -18,7 +18,7 @@ echo "***********LIAGENT CONFIGURATION************" >>   /var/lib/loginsight-age
 echo "[server]"               >> /var/lib/loginsight-agent/liagent.ini
 echo "hostname=$LI_SERVER"    >> /var/lib/loginsight-agent/liagent.ini
 echo "[filelog|syslog]"       >> /var/lib/loginsight-agent/liagent.ini
-echo "directory=/var/log"     >> /var/lib/loginsight-agent/liagent.ini
+echo "directory=/var/pod_log" >> /var/lib/loginsight-agent/liagent.ini
 echo "include=*.*"            >> /var/lib/loginsight-agent/liagent.ini
 
 
