@@ -17,10 +17,10 @@ rm -rf /tmp/li
 echo "***********LIAGENT CONFIGURATION************" >>   /var/lib/loginsight-agent/liagent.ini
 echo "[server]"               >> /var/lib/loginsight-agent/liagent.ini
 echo "hostname=$LI_SERVER"    >> /var/lib/loginsight-agent/liagent.ini
-echo "[filelog|syslog]"       >> /var/lib/loginsight-agent/liagent.ini
+echo "[filelog|pod_log]"      >> /var/lib/loginsight-agent/liagent.ini
 echo "directory=/var/pod_log" >> /var/lib/loginsight-agent/liagent.ini
 echo "include=*.*"            >> /var/lib/loginsight-agent/liagent.ini
-
+echo "tags={\"Tag_Appli\":\"nginx\"}" >> /var/lib/loginsight-agent/liagent.ini
 
 
 # start Log Insight agent
