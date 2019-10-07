@@ -39,6 +39,8 @@ spec:
           value: "1.2.3.4.5"  #172.18.4.58
         - name: LI_VERSION
           value: "v4.8.0"
+        - name: TAG_APPLI
+          value: "appliN"
 
 
 ---

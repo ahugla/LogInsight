@@ -1,6 +1,7 @@
 # echo input parameters
 echo "LI_VERSION="$LI_VERSION
 echo "LI_SERVER="$LI_SERVER
+echo "TAG_APPLI="$TAG_APPLI
 
 
 # installe l'agent log insight
@@ -20,7 +21,7 @@ echo "hostname=$LI_SERVER"    >> /var/lib/loginsight-agent/liagent.ini
 echo "[filelog|pod_log]"      >> /var/lib/loginsight-agent/liagent.ini
 echo "directory=/var/pod_log" >> /var/lib/loginsight-agent/liagent.ini
 echo "include=*.*"            >> /var/lib/loginsight-agent/liagent.ini
-echo "tags={\"Tag_Appli\":\"nginx\"}" >> /var/lib/loginsight-agent/liagent.ini
+echo "tags={\"Tag_Appli\":\"$TAG_APPLI\"}" >> /var/lib/loginsight-agent/liagent.ini
 
 
 # start Log Insight agent
