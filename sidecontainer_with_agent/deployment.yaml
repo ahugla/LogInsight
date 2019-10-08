@@ -27,7 +27,7 @@ spec:
           containerPort: 80
         volumeMounts:
         - name: appli-log
-          mountPath: /var/log/nginx
+          mountPath: /var/log/nginx   # doit etre coherent avec la valeur de APPLI_LOG_DIR
       # sidecar avec liagent
       - name: liagent
         image: alexfr75/alex-liagent:1.0
@@ -41,6 +41,9 @@ spec:
           value: "v4.8.0"
         - name: TAG_APPLI
           value: "appliN"
+        - name: APPLI_LOG_DIR
+          value: "/var/log/nginx"   #/var/log/nginx
+          
 
 
 ---

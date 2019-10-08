@@ -1,7 +1,8 @@
-# echo input parameters
+# echo input parameters  -  docker logs permet de les voirs
 echo "LI_VERSION="$LI_VERSION
 echo "LI_SERVER="$LI_SERVER
 echo "TAG_APPLI="$TAG_APPLI
+echo "APPLI_LOG_DIR="$APPLI_LOG_DIR
 
 
 # installe l'agent log insight
@@ -16,11 +17,11 @@ rm -rf /tmp/li
 
 
 echo "***********LIAGENT CONFIGURATION************" >>   /var/lib/loginsight-agent/liagent.ini
-echo "[server]"               >> /var/lib/loginsight-agent/liagent.ini
-echo "hostname=$LI_SERVER"    >> /var/lib/loginsight-agent/liagent.ini
-echo "[filelog|pod_log]"      >> /var/lib/loginsight-agent/liagent.ini
-echo "directory=/var/pod_log" >> /var/lib/loginsight-agent/liagent.ini
-echo "include=*.*"            >> /var/lib/loginsight-agent/liagent.ini
+echo "[server]"                 >> /var/lib/loginsight-agent/liagent.ini
+echo "hostname=$LI_SERVER"      >> /var/lib/loginsight-agent/liagent.ini
+echo "[filelog|pod_log]"        >> /var/lib/loginsight-agent/liagent.ini
+echo "directory=$APPLI_LOG_DIR" >> /var/lib/loginsight-agent/liagent.ini
+echo "include=*.*"              >> /var/lib/loginsight-agent/liagent.ini
 echo "tags={\"Tag_Appli\":\"$TAG_APPLI\"}" >> /var/lib/loginsight-agent/liagent.ini
 
 
