@@ -2,7 +2,6 @@
 echo "LI_VERSION="$LI_VERSION
 echo "LI_SERVER="$LI_SERVER
 echo "TAG_APPLI="$TAG_APPLI
-echo "APPLI_LOG_DIR="$APPLI_LOG_DIR
 
 
 # installe l'agent log insight
@@ -12,15 +11,12 @@ chmod +x /tmp/li/$LI_VERSION/VMware-Log-Insight-*.bin
 rm -rf /tmp/li
 
 
-# configure agent with Log Insight Server FQDN or IP
-# sed -i '8 a hostname='$LI_SERVER'' /var/lib/loginsight-agent/liagent.ini
-
-
+# configure l'agent Log Insight
 echo "***********LIAGENT CONFIGURATION************" >>   /var/lib/loginsight-agent/liagent.ini
 echo "[server]"                 >> /var/lib/loginsight-agent/liagent.ini
 echo "hostname=$LI_SERVER"      >> /var/lib/loginsight-agent/liagent.ini
 echo "[filelog|pod_log]"        >> /var/lib/loginsight-agent/liagent.ini
-echo "directory=$APPLI_LOG_DIR" >> /var/lib/loginsight-agent/liagent.ini
+echo "directory=/var/pod_log"   >> /var/lib/loginsight-agent/liagent.ini
 echo "include=*.*"              >> /var/lib/loginsight-agent/liagent.ini
 echo "tags={\"Tag_Appli\":\"$TAG_APPLI\"}" >> /var/lib/loginsight-agent/liagent.ini
 

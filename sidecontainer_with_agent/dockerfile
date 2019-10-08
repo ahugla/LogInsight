@@ -17,7 +17,7 @@ CMD /home/container_start.sh               # WORKS
 
 # USE IT THAT WAY WITH DOCKER
 # docker build -t alexfr75/alex-liagent:1.0 .
-# docker run -d -e "LI_SERVER=1.1.1.300"  -e "LI_VERSION=v4.8.0" -e "TAG_APPLI=alexphp" -e "APPLI_LOG_DIR=/var/log/nginx" alexfr75/alex-liagent:1.0
-# docker run -d -e "LI_SERVER=1.1.1.300"  -e "LI_VERSION=v4.8.0" -e "TAG_APPLI=alexphp" -e "APPLI_LOG_DIR=/var/log/nginx" -v /tmp/pod1_log:/var/log  alexfr75/alex-liagent:1.0
+# docker run -d -e "LI_SERVER=1.1.1.300"  -e "LI_VERSION=v4.8.0" -e "TAG_APPLI=alexphp" alexfr75/alex-liagent:1.0
+# docker run -d -e "LI_SERVER=1.1.1.300"  -e "LI_VERSION=v4.8.0" -e "TAG_APPLI=alexphp" -v /tmp/pod1_log:/var/log  alexfr75/alex-liagent:1.0
 
 
