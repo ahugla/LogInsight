@@ -7,8 +7,8 @@ FROM photon
 COPY ./LIagent.bin /tmp/LIagent.bin
 
 
-RUN  tdnf -y update \
-&&   tdnf install -y awk tar gzip \
+# RUN  tdnf -y update \
+RUN  tdnf install -y awk tar gzip \
 &&   chmod +x /tmp/LIagent.bin \
 &&   /tmp/LIagent.bin \
 &&   rm -rf LIagent.bin \
