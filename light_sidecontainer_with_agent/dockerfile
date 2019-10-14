@@ -10,7 +10,7 @@ COPY ./LIagent.bin /tmp/LIagent.bin
 RUN  tdnf -y update \
 &&   tdnf install -y awk tar gzip \
 &&   chmod +x /tmp/LIagent.bin \
-&&   /tmp/LIagent.bin \ 
+&&   /tmp/LIagent.bin \
 &&   rm -rf LIagent.bin \
 &&   curl -o /home/container_start.sh https://raw.githubusercontent.com/ahugla/LogInsight/master/sidecontainer_with_agent/container_start.sh \
 &&   chmod 755 /home/container_start.sh \
