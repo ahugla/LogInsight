@@ -20,13 +20,14 @@ yum install -y git
 git clone https://github.com/ahugla/LogInsight.git /tmp/prepareContainer
 
 
-# On met tous les fichiers au meme endroit (.bin et dockerfile)
-cp /tmp/prepareContainer/li/$LI_VERSION/VMware-Log-Insight-*.bin /tmp/preparecontainer/Liagent.bin
-curl -O https://trucmachinbidule
+# On met tous les fichiers au meme endroit (LIagent.bin et dockerfile)
+cd $LI_VERSION
+mv VMware*.bin LIagent.bin
+curl -O https://raw.githubusercontent.com/ahugla/LogInsight/master/light_sidecontainer_with_agent/dockerfile
 
 
 # Build du container
 docker build -t $containerImage:$containerVersion .
 
-doocker push
+#docker push
 

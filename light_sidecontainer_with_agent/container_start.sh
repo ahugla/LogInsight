@@ -1,13 +1,10 @@
+# configure l'agent LogInsight puis le demarre
+
+
 # echo input parameters  -  docker logs permet de les voirs
 echo "LI_VERSION="$LI_VERSION
 echo "LI_SERVER="$LI_SERVER
 echo "TAG_APPLI="$TAG_APPLI
-
-
-# installe l'agent log insight
-chmod +x /tmp/li/Liagent.bin
-/tmp/li/Liagent.bin
-rm -rf /tmp/li
 
 
 # configure l'agent Log Insight
