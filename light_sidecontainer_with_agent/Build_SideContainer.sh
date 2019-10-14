@@ -28,5 +28,5 @@ curl -O https://raw.githubusercontent.com/ahugla/LogInsight/master/light_sidecon
 
 # Build du container
 docker build -t $containerImage:$containerVersion .
-docker push
+docker push $containerImage:$containerVersion
 
