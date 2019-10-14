@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-and-log
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: APPLICATION
+  template:
+    metadata:
+      labels:
+        app: APPLICATION
+    spec:
+
+      # definition du volume de pod
+      volumes:
+      - name: appli-log
+        emptyDir: {}
+
+      containers:
+      # application
+      - name: nginx
+        image: alexfr75/nginx:1.1
+        ports:
+        - name: http
+          containerPort: 80
+        volumeMounts:
+        - name: appli-log
+          mountPath: /var/log/nginx   # Repertoire dans lequel sont les fichiers de log
+      # sidecar avec liagent
+      - name: liagent
+        image: alexfr75/alex-liagent-light:1.0
+        volumeMounts:
+        - name: appli-log
+          mountPath: /var/pod_log     # NE PAS MODIFIER car l'agent LI est configuré pour collecter depuis ce repertoire
+        env:
+        - name: LI_SERVER
+          value: "1.2.3.4.5"  #172.18.4.58
+        - name: LI_VERSION
+          value: "v4.8.0"
+        - name: TAG_APPLI
+          value: "appliN"
+
+
+---
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-app-and-log
+spec:
+  type: NodePort
+  ports:
+  - name: http
+    targetPort : 80    # port dans le container !! (INDISPENSABLE pour que cela fonctionne)
+    nodePort: 31280    # pour forcer le port expose par le service en externe (sinon alÃ©oire) (LB nord/sud)
+    port: 31180        # port interne pour le clusterIP (LB est/ouest)
+  selector:
+    app: APPLICATION
+
+
+

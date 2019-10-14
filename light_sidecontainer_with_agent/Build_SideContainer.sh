@@ -5,7 +5,7 @@
 
 
 # Variables
-containerImage="alexfr75/alex-liagent"
+containerImage="alexfr75/alex-liagent-light"
 containerVersion="1.0"
 LI_VERSION="v4.8.0"
 
@@ -28,6 +28,5 @@ curl -O https://raw.githubusercontent.com/ahugla/LogInsight/master/light_sidecon
 
 # Build du container
 docker build -t $containerImage:$containerVersion .
-
-#docker push
+docker push
 
