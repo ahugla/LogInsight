@@ -1,0 +1,337 @@
+{
+  "name":"Alex-LI-Content",
+  "namespace":"local.showroom",
+  "contentPackId":"local.showroom",
+  "framework":"#9c4",
+  "version":"2.4",
+  "extractedFields":[ {
+    "displayName":"Alex_TITO_HTTP_Protocol",
+    "preContext":"Appel de TITO via ",
+    "postContext":";TITO-App",
+    "regexValue":"\\w+",
+    "internalName":"ibadcnc7nrxwgylmfzzwq33xojxw63kbnrsxqx2ujfke6x2ikrkfax2qojxxi33dn5wa0000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Tito-Home",
+    "preContext":"TITO-App;home=",
+    "postContext":";work=",
+    "regexValue":".*",
+    "internalName":"ibadcnc7nrxwgylmfzzwq33xojxw63kunf2g6lkin5wwk000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Tito-VM_or_Containers",
+    "preContext":"\\] ",
+    "postContext":" \\[pid",
+    "regexValue":"\\S+",
+    "internalName":"ibadcnc7nrxwgylmfzzwq33xojxw63kunf2g6lkwjvpw64s7inxw45dbnfxgk4tt",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Tito-Work",
+    "preContext":";work=",
+    "postContext":";",
+    "regexValue":".*",
+    "internalName":"ibadcnc7nrxwgylmfzzwq33xojxw63kunf2g6lkxn5zgw000",
+    "constraints":null,
+    "info":null
+  } ],
+  "queries":[ {
+    "name":"DNS showroom - Add into DNS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1572889123728,\"endTimeMillis\":1572889423727,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"cpodrouter-vrealizesuite\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QADD\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qdemo.shwrfr.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"Migration - DRS Completed",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1504706287140,\"endTimeMillis\":1504709896360,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DRS migrated\"},{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"172.18.4.30\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"Migration - VMotion Completed",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1504686565665,\"endTimeMillis\":1504690174083,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"Migration\"},{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"172.18.4.30\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"completed\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"DNS showroom - Clean DNS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1572889747788,\"endTimeMillis\":1572890047787,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"cpodrouter-vrealizesuite\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E(.*)$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"DNS showroom - Remove from DNS",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1572889123728,\"endTimeMillis\":1572889423727,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"cpodrouter-vrealizesuite\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QREMOVE\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qdemo.shwrfr.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  } ],
+  "alerts":[ ],
+  "dashboardSections":[ {
+    "views":[ {
+      "name":"Total Events",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Total Events",
+          "info":"The total number of events received over time.",
+          "gridWidth":"1/2",
+          "chartType":null,
+          "chartOptions":"{\"doublegroupbymultiseries\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":0,\"endTimeMillis\":0,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        } ]
+      } ]
+    }, {
+      "name":"Alex - DNS cpod vR",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"ADD into DNS",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1572889123728,\"endTimeMillis\":1572889423727,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"cpodrouter-vrealizesuite\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QADD\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qdemo.shwrfr.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        }, {
+          "name":"Add into DNS - List",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1572889123728,\"endTimeMillis\":1572889423727,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"cpodrouter-vrealizesuite\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QADD\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qdemo.shwrfr.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null,
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Remove from DNS",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1572889123728,\"endTimeMillis\":1572889423727,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"cpodrouter-vrealizesuite\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QREMOVE\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qdemo.shwrfr.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        }, {
+          "name":"Remove from DNS - List",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1572889123728,\"endTimeMillis\":1572889423727,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"cpodrouter-vrealizesuite\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E\\\\\\\\QREMOVE\\\\\\\\E\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q \\\\\\\\E(.*)\\\\\\\\Q-\\\\\\\\E\\\\\\\\Qdemo.shwrfr.com\\\\\\\\E$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null,
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Clean DNS",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1572889747788,\"endTimeMillis\":1572890047787,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"cpodrouter-vrealizesuite\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E(.*)$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        }, {
+          "name":"Clean DNS - List",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1572889747788,\"endTimeMillis\":1572890047787,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"hostname\",\"operator\":\"CONTAINS\",\"value\":\"cpodrouter-vrealizesuite\"},{\"internalName\":\"event_type\",\"operator\":\"IS\",\"value\":\"^(.*)\\\\\\\\Q \\\\\\\\E(.*)$\",\"plugin\":\"EXPAND_PATTERN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null,
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      } ]
+    }, {
+      "name":"Alex - K8S - Container's logs",
+      "constraints":[ {
+        "internalName":"hostname",
+        "operator":"CONTAINS"
+      } ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Container's logs volume",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1536317781574,\"endTimeMillis\":1536321381573,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/messages\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vRA-VM-0817 journal:,vRA-VM-0818 journal:\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Container's log",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500979132444,\"endTimeMillis\":1536321430789,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/messages\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"vRA-VM-0817 journal:,vRA-VM-0818 journal:\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_source_path",
+            "displayName":"source",
+            "displayNamespace":null
+          }, {
+            "internalName":"hostname",
+            "displayName":"hostname",
+            "displayNamespace":null
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Pod creation from RC",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"pod\",\"startTimeMillis\":1545054945243,\"endTimeMillis\":1545058545242,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"'successfulcreate' created pod:\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        } ]
+      } ]
+    }, {
+      "name":"TITO app",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"TITO - Successful Requests",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\\\"Tito-App;home=\\\"\",\"startTimeMillis\":1516203355575,\"endTimeMillis\":1516206955574,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"TITO - Over Time",
+          "info":"",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\\\"Tito-App;home=\\\"\",\"startTimeMillis\":1516203389995,\"endTimeMillis\":1516206990131,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"TITO - Trajets Détails",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"Tito-App\",\"startTimeMillis\":1515489058038,\"endTimeMillis\":1515492658037,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Tito-Home\",\"internalName\":\"ibadcnc7nrxwgylmfzzwq33xojxw63kunf2g6lkin5wwk000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"Tito-Work\",\"internalName\":\"ibadcnc7nrxwgylmfzzwq33xojxw63kunf2g6lkxn5zgw000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Tito-Home\",\"preContext\":\"TITO-App;home=\",\"postContext\":\";work=\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7nrxwgylmfzzwq33xojxw63kunf2g6lkin5wwk000\",\"constraints\":null},{\"displayName\":\"Tito-Work\",\"preContext\":\";work=\",\"postContext\":\";\",\"regexValue\":\".*\",\"internalName\":\"ibadcnc7nrxwgylmfzzwq33xojxw63kunf2g6lkxn5zgw000\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"TITO - Trajets",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1516179189464,\"endTimeMillis\":1516182789463,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"TITO-App;home=\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"ibadcnc7nrxwgylmfzzwq33xojxw63kunf2g6lkxn5zgw000",
+            "displayName":"Tito-Work",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcnc7nrxwgylmfzzwq33xojxw63kunf2g6lkin5wwk000",
+            "displayName":"Tito-Home",
+            "displayNamespace":"Unknown"
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Repartition des appels : API (get) / UI (post)",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1516263493111,\"endTimeMillis\":1516267093269,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ANY\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"Appel de TITO via * ;TITO-App\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex_TITO_HTTP_Protocol\",\"internalName\":\"ibadcnc7nrxwgylmfzzwq33xojxw63kbnrsxqx2ujfke6x2ikrkfax2qojxxi33dn5wa0000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex_TITO_HTTP_Protocol\",\"preContext\":\"Appel de TITO via \",\"postContext\":\";TITO-App\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcnc7nrxwgylmfzzwq33xojxw63kbnrsxqx2ujfke6x2ikrkfax2qojxxi33dn5wa0000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"tito_platform",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"tito\",\"startTimeMillis\":1583487797087,\"endTimeMillis\":1583488097086,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"tito_platform\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"tito_platform\",\"internalName\":\"tito_platform\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Wavefront Error",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500979132444,\"endTimeMillis\":1542657600428,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"wavefront - error\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      } ]
+    } ],
+    "header":""
+  } ],
+  "agentClasses":[ {
+    "name":"TITO K8S",
+    "info":"",
+    "agentConfig":"[filelog|auth_Disabled]\ndirectory=/var/log\ninclude=auth.log;auth.log.?\nparser=auth_parser_no_used\ntags={\"vmw_cp\":\"linux\"}\nenabled=no\n\n[filelog|messages_Disabled]\ndirectory=/var/log\ninclude=messages;messages.?\nparser=syslog_parser_no_used\ntags={\"vmw_cp\":\"linux\"}\nenabled=no\n\n[filelog|syslog_Disabled]\ndirectory=/var/log\ninclude=syslog;syslog.?\nparser=syslog_parser_no_used\ntags={\"vmw_cp\":\"linux\"}\nenabled=no\n\n[parser|auth_parser_no_used]\nbase_parser=clf\nformat=%t %i %{appname}i[%{thread_id}i]: pam_unix(passwd:chauthtok): password changed for %{linux_user}i\nnext_parser=auth_parser_sles_no_used\n\n[parser|auth_parser_sles_no_used]\nbase_parser=clf\nformat=%t %i %{appname}i[%{thread_id}i]: password changed - account=%{linux_user}i, uid=%{uid}i, %i\nnext_parser=syslog_parser_no_used\n\n[parser|syslog_parser_no_used]\nbase_parser=clf\nformat=%t %i %{appname}i: %M\nfield_decoder={\"appname\":\"syslog_appname_parser_no_used\"}\nexclude_fields=log_message\n\n[parser|syslog_appname_parser_no_used]\nbase_parser=clf\nformat=%{appname}i[%{thread_id}i]\n\n[filelog|tito_K8S]\ndirectory=/var/lib/docker/containers/*\ninclude=*.log\ntags={\"Tito_platform\":\"K8S\"}\n"
+  }, {
+    "name":"Tito VMs",
+    "info":"",
+    "agentConfig":"[filelog|tito]\ndirectory=/var/log/httpd\ninclude=error_log\ntags={\"Tito_platform\":\"VM\"}\n"
+  }, {
+    "name":"cpod-router",
+    "info":"",
+    "agentConfig":"[filelog|auth]\ndirectory=/var/log\ninclude=auth.log;auth.log.?\nparser=auth_parser\ntags={\"vmw_cp\":\"linux\"}\n\n[filelog|messages]\ndirectory=/var/log\ninclude=messages;messages.?\nparser=syslog_parser\ntags={\"vmw_cp\":\"linux\"}\n\n[filelog|syslog]\ndirectory=/var/log\ninclude=syslog;syslog.?\nparser=syslog_parser\ntags={\"vmw_cp\":\"linux\"}\n\n[parser|auth_parser]\nbase_parser=clf\nformat=%t %i %{appname}i[%{thread_id}i]: pam_unix(passwd:chauthtok): password changed for %{linux_user}i\nnext_parser=auth_parser_sles\n\n[parser|auth_parser_sles]\nbase_parser=clf\nformat=%t %i %{appname}i[%{thread_id}i]: password changed - account=%{linux_user}i, uid=%{uid}i, %i\nnext_parser=syslog_parser\n\n[parser|syslog_parser]\nbase_parser=clf\nformat=%t %i %{appname}i: %M\nfield_decoder={\"appname\":\"syslog_appname_parser\"}\nexclude_fields=log_message\n\n[parser|syslog_appname_parser]\nbase_parser=clf\nformat=%{appname}i[%{thread_id}i]\n\n[filelog|ShowroomDNS]\ndirectory=/root/alex\ninclude=dns.log\n"
+  } ],
+  "aliasFields":[ ],
+  "aliasRules":[ ],
+  "author":"",
+  "url":"",
+  "contentVersion":"1.0"
+}
