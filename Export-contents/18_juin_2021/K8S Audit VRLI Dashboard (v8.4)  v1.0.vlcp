@@ -1,0 +1,125 @@
+{
+  "name":"K8S Audit VRLI Dashboard (v8.4)",
+  "namespace":"K8SAudit.local.showroom",
+  "contentPackId":"K8SAudit.local.showroom",
+  "framework":"#9c4",
+  "version":"2.4",
+  "extractedFields":[ ],
+  "queries":[ ],
+  "alerts":[ ],
+  "dashboardSections":[ {
+    "views":[ {
+      "name":"K8S AUDIT",
+      "constraints":[ {
+        "internalName":"__li_source_path",
+        "operator":"CONTAINS"
+      } ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Pods créés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623938736812,\"endTimeMillis\":1624025137493,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Pods supprimés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623938752899,\"endTimeMillis\":1624025153391,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"},{\"internalName\":\"user_username\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"system:node\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Services Créés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623852231089,\"endTimeMillis\":1624025031857,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        }, {
+          "name":"Services supprimés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623852267276,\"endTimeMillis\":1624025067301,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Pods créés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623849827263,\"endTimeMillis\":1624022627262,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Services créés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623936486972,\"endTimeMillis\":1624022886971,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Pods supprimés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1603210505868,\"endTimeMillis\":1624022787242,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"},{\"internalName\":\"user_username\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"system:node\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Services supprimés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623936640143,\"endTimeMillis\":1624023040142,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Autres ressources créés  (hors pods et services)",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623937013591,\"endTimeMillis\":1624023413590,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events,services,pods\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"requesturi\",\"operator\":\"CONTAINS\",\"value\":\"kubectl-create,kubectl-run\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Type de ressources créés (hors pods et services)",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623937648814,\"endTimeMillis\":1624024049360,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events,services,pods\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"requesturi\",\"operator\":\"CONTAINS\",\"value\":\"kubectl-create,kubectl-run\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"failure\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"K8S - Tâches Failed",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623851330144,\"endTimeMillis\":1624024130143,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events,endpoints\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"responsestatus_reason\",\"internalName\":\"responsestatus_reason\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      } ]
+    } ],
+    "header":""
+  } ],
+  "aliasFields":[ ],
+  "aliasRules":[ ],
+  "author":"",
+  "url":"",
+  "contentVersion":"1.0"
+}
