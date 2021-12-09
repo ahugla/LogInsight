@@ -1,0 +1,1136 @@
+{
+  "name":"Alex-Salt",
+  "namespace":"Salt.local.showroom",
+  "contentPackId":"Salt.local.showroom",
+  "framework":"#9c4",
+  "version":"2.4",
+  "extractedFields":[ {
+    "displayName":"Alex-Salt-Function",
+    "preContext":"Function: ",
+    "postContext":"\\, StateFile",
+    "regexValue":"\\S+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Alex-Salt-IsSuccess",
+    "preContext":"IsSuccess: ",
+    "postContext":"",
+    "regexValue":"\\w+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000",
+    "constraints":"{\"searchTerms\":\"\"}",
+    "info":null
+  }, {
+    "displayName":"Alex-Salt-Master",
+    "preContext":"ParentMaster: ",
+    "postContext":", ReturnerKind",
+    "regexValue":"\\S+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknmfzxizls",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Alex-Salt-Minion",
+    "preContext":"Minion: ",
+    "postContext":"\\, IsSuccess",
+    "regexValue":"\\S+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Alex-Salt-ReturnerKind",
+    "preContext":"ReturnerKind: ",
+    "postContext":"\\, Function",
+    "regexValue":"\\w+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilksmv2hk4tomvzew2lomq000000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Alex-Salt-StateFile",
+    "preContext":"StateFile: ",
+    "postContext":", Minion",
+    "regexValue":".*",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Alex_TITO_HTTP_Protocol",
+    "preContext":"Appel de TITO via ",
+    "postContext":";TITO-App",
+    "regexValue":"\\w+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqx2ujfke6x2ikrkfax2qojxxi33dn5wa0000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"AppReleaseMgmt_appName",
+    "preContext":":: appName=",
+    "postContext":" :: appVersion",
+    "regexValue":"\\w+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"AppReleaseMgmt_appReleaseStrategy",
+    "preContext":":: appReleaseStrategy=",
+    "postContext":" :: deploymentStage",
+    "regexValue":"\\S+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfezlmmvqxgzktorzgc5dfm54q0000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"AppReleaseMgmt_appVersion",
+    "preContext":":: appVersion=",
+    "postContext":" :: appReleaseStrategy",
+    "regexValue":"\\S+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"AppReleaseMgmt_deploymentStage",
+    "preContext":":: deploymentStage=",
+    "postContext":"",
+    "regexValue":"\\w+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"AppReleaseMgmt_keyfilter",
+    "preContext":":: keyFilter=",
+    "postContext":" :: appName",
+    "regexValue":"\\w+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3lmv4wm2lmorsxe000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"CatalogID",
+    "preContext":"api/items/",
+    "postContext":"/versions",
+    "regexValue":"\\S+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kdmf2gc3dpm5eui000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"DNS Action",
+    "preContext":"DNS",
+    "postContext":"\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b",
+    "regexValue":".*",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kejzjsaqldoruw63q0",
+    "constraints":"{\"filters\":[{\"internalName\":\"__li_source_path\",\"displayName\":\"source\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.1\",\"fieldType\":\"STRING\",\"isExtracted\":false,\"hidden\":false}]}",
+    "info":null
+  }, {
+    "displayName":"Doca-Action",
+    "preContext":" :: action=",
+    "postContext":"",
+    "regexValue":".*",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63ken5rwclkbmn2gs33o",
+    "constraints":"{\"searchTerms\":\"DOCAPOSTE_DEMO\"}",
+    "info":null
+  }, {
+    "displayName":"Doca-Type",
+    "preContext":"DOCAPOSTE_DEMO :: ",
+    "postContext":" :: action",
+    "regexValue":".*",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63ken5rwclkupfygk000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Tito-Home",
+    "preContext":"TITO-App;home=",
+    "postContext":";work=",
+    "regexValue":".*",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kunf2g6lkin5wwk000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"Tito-Work",
+    "preContext":";work=",
+    "postContext":";",
+    "regexValue":".*",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kunf2g6lkxn5zgw000",
+    "constraints":null,
+    "info":null
+  }, {
+    "displayName":"alex truc",
+    "preContext":"RpcConnection\\[",
+    "postContext":" Closed",
+    "regexValue":"-?\\d+",
+    "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63lbnrsxqiduoj2wg000",
+    "constraints":null,
+    "info":null
+  } ],
+  "queries":[ {
+    "name":"K8S - Type de ressources",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623937091753,\"endTimeMillis\":1623937391752,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":\"number\",\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"pielabelstyle\\\":\\\"legend\\\",\\\"piepercentage\\\":false,\\\"piestyle\\\":\\\"normal\\\"}\"}"
+  }, {
+    "name":"K8S - Create & Delete Pods",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623941648874,\"endTimeMillis\":1623945248873,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete,create\"},{\"internalName\":\"responseobject_kind\",\"operator\":\"CONTAINS\",\"value\":\"pod\"},{\"internalName\":\"user_username\",\"operator\":\"CONTAINS\",\"value\":\"kubernetes-admin\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":\"pie\",\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"pielabelstyle\\\":\\\"legend\\\",\\\"piepercentage\\\":false,\\\"piestyle\\\":\\\"normal\\\"}\"}"
+  }, {
+    "name":"K8S - Tâches Failed",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623996208856,\"endTimeMillis\":1624017809829,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events,endpoints\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"responsestatus_reason\",\"internalName\":\"responsestatus_reason\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Alex - Filter2",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623833102343,\"endTimeMillis\":1624005902848,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Alex filtre 1",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623938997822,\"endTimeMillis\":1623939297821,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases\"},{\"internalName\":\"stage\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"responsestarted,requestreceived\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":\"line\",\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Tâches Failed",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623996208856,\"endTimeMillis\":1624017809829,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events,endpoints\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"responsestatus_reason\",\"internalName\":\"responsestatus_reason\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Pods créés",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1624006284097,\"endTimeMillis\":1624009884779,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+  }, {
+    "name":"All Salt",
+    "chartQuery":"{\"query\":\"\\\"Salt Execution\\\"\",\"startTimeMillis\":1638194204449,\"endTimeMillis\":1638194504566,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Creation pod par command line ou fichier yaml",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623927078594,\"endTimeMillis\":1623948678915,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"responsestatus_code\",\"operator\":\"CONTAINS\",\"value\":\"200,201\"},{\"internalName\":\"level\",\"operator\":\"CONTAINS\",\"value\":\"requestresponse\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"fourranges\\\":{\\\"ranges\\\":[\\\"\\\",\\\"\\\",\\\"\\\",\\\"\\\"]}}\"}"
+  }, {
+    "name":"K8S - Pods supprimés",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1624006437139,\"endTimeMillis\":1624010037366,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"stage\",\"internalName\":\"stage\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - creation de resources reussie",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1624005821526,\"endTimeMillis\":1624009422536,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"requesturi\",\"operator\":\"CONTAINS\",\"value\":\"kubectl-create,kubectl-run\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+  }, {
+    "name":"DNS Action Ratio",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1624526912438,\"endTimeMillis\":1625131712437,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DNS ADD,DNS REMOVE,DNS CLEAN\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"DNS Action\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kejzjsaqldoruw63q0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"DNS Action\",\"preContext\":\"DNS\",\"postContext\":\"\\\\b(?:[0-9]{1,3}\\\\.){3}[0-9]{1,3}\\\\b\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kejzjsaqldoruw63q0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"__li_source_path\\\",\\\"displayName\\\":\\\"source\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"172.17.1.1\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+    "messageQuery":"",
+    "options":"{\"chartTypeName\":\"pie\",\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"pielabelstyle\\\":\\\"inline\\\",\\\"piepercentage\\\":true,\\\"piestyle\\\":\\\"donut\\\"}\"}"
+  }, {
+    "name":"K8S - Alex - Filter3",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623833328808,\"endTimeMillis\":1624006128807,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"trendline\\\":false,\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Failure sur create et run de (pod et service)",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1624005761554,\"endTimeMillis\":1624009361861,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"requesturi\",\"operator\":\"CONTAINS\",\"value\":\"kubectl-create,kubectl-run\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Services créés",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623995781704,\"endTimeMillis\":1624017381919,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+  }, {
+    "name":"K8S - Services - Supprimés",
+    "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1624013531397,\"endTimeMillis\":1624017132252,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"__li_source_path\",\"operator\":\"CONTAINS\",\"value\":\"172.17.1.59\"},{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+    "messageQuery":null,
+    "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"legend\\\":true,\\\"stacking\\\":\\\"normal\\\",\\\"spline\\\":false}\"}"
+  } ],
+  "alerts":[ ],
+  "dashboardSections":[ {
+    "views":[ {
+      "name":"Total Events",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Total Events",
+          "info":"The total number of events received over time.",
+          "gridWidth":"1/2",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1618307069235,\"endTimeMillis\":1618328669234,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"hostname\",\"internalName\":\"hostname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      } ]
+    }, {
+      "name":"DNS showroom",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"DNS Actions",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"inline\",\"piepercentage\":true,\"piestyle\":\"donut\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1624526912438,\"endTimeMillis\":1625131712437,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DNS ADD,DNS REMOVE,DNS CLEAN\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"DNS Action\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kejzjsaqldoruw63q0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"DNS Action\",\"preContext\":\"DNS\",\"postContext\":\"\\\\b(?:[0-9]{1,3}\\\\.){3}[0-9]{1,3}\\\\b\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kejzjsaqldoruw63q0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"__li_source_path\\\",\\\"displayName\\\":\\\"source\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"172.17.1.1\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"DNS Action counts",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"inline\",\"piepercentage\":true,\"piestyle\":\"donut\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1590962400000,\"endTimeMillis\":1625066962729,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DNS ADD,DNS REMOVE,DNS CLEAN\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"DNS Action\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kejzjsaqldoruw63q0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"DNS Action\",\"preContext\":\"DNS\",\"postContext\":\"\\\\b(?:[0-9]{1,3}\\\\.){3}[0-9]{1,3}\\\\b\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kejzjsaqldoruw63q0\",\"constraints\":\"{\\\"filters\\\":[{\\\"internalName\\\":\\\"__li_source_path\\\",\\\"displayName\\\":\\\"source\\\",\\\"operator\\\":\\\"CONTAINS\\\",\\\"value\\\":\\\"172.17.1.1\\\",\\\"fieldType\\\":\\\"STRING\\\",\\\"isExtracted\\\":false,\\\"hidden\\\":false}]}\"}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"ADD into DNS",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606403571474,\"endTimeMillis\":1606403871473,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DNS ADD\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"ADD into DNS - List",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1603210505868,\"endTimeMillis\":1606404214065,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DNS ADD\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"REMOVE from DNS",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1603210505868,\"endTimeMillis\":1606404003084,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DNS REMOVE\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"REMOVE from DNS - List",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606401083952,\"endTimeMillis\":1606404684333,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DNS REMOVE\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"CLEAN DNS",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606404478029,\"endTimeMillis\":1606404778699,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DNS CLEAN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"CLEAN DNS - List",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606404478029,\"endTimeMillis\":1606404778699,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"DNS CLEAN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      } ]
+    }, {
+      "name":"TITO app",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"TITO - Successful Requests",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\\\"Tito-App;home=\\\"\",\"startTimeMillis\":1516203355575,\"endTimeMillis\":1516206955574,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"TITO - Over Time",
+          "info":"",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\\\"Tito-App;home=\\\"\",\"startTimeMillis\":1516203389995,\"endTimeMillis\":1516206990131,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"TITO - Trajets Détails",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"Tito-App\",\"startTimeMillis\":1515489058038,\"endTimeMillis\":1515492658037,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Tito-Home\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kunf2g6lkin5wwk000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"Tito-Work\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kunf2g6lkxn5zgw000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Tito-Home\",\"preContext\":\"TITO-App;home=\",\"postContext\":\";work=\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kunf2g6lkin5wwk000\",\"constraints\":null},{\"displayName\":\"Tito-Work\",\"preContext\":\";work=\",\"postContext\":\";\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kunf2g6lkxn5zgw000\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"TITO - Trajets",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1603210505868,\"endTimeMillis\":1606410180301,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"TITO-App;home=\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"tito_platform",
+            "displayName":"tito_platform",
+            "displayNamespace":null
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kunf2g6lkin5wwk000",
+            "displayName":"Tito-Home",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kunf2g6lkxn5zgw000",
+            "displayName":"Tito-Work",
+            "displayNamespace":"Unknown"
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Repartition des appels : API (get) / UI (post)",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1516263493111,\"endTimeMillis\":1516267093269,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ANY\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"Appel de TITO via * ;TITO-App\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex_TITO_HTTP_Protocol\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqx2ujfke6x2ikrkfax2qojxxi33dn5wa0000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex_TITO_HTTP_Protocol\",\"preContext\":\"Appel de TITO via \",\"postContext\":\";TITO-App\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqx2ujfke6x2ikrkfax2qojxxi33dn5wa0000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"tito_platform",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"tito\",\"startTimeMillis\":1583487797087,\"endTimeMillis\":1583488097086,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"tito_platform\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"tito_platform\",\"internalName\":\"tito_platform\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Wavefront Error",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1500979132444,\"endTimeMillis\":1542657600428,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"wavefront - error\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      } ]
+    }, {
+      "name":"Application Release Management",
+      "constraints":[ {
+        "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3lmv4wm2lmorsxe000",
+        "operator":"CONTAINS"
+      }, {
+        "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000",
+        "operator":"CONTAINS"
+      }, {
+        "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfezlmmvqxgzktorzgc5dfm54q0000",
+        "operator":"CONTAINS"
+      } ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Actions realisées",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606914573763,\"endTimeMillis\":1606918173762,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"AppReleaseMgmt_appVersion\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"AppReleaseMgmt_appName\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"AppReleaseMgmt_appName\",\"preContext\":\":: appName=\",\"postContext\":\" :: appVersion\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_appVersion\",\"preContext\":\":: appVersion=\",\"postContext\":\" :: appReleaseStrategy\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"preContext\":\":: deploymentStage=\",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Environnements",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"Alex\",\"startTimeMillis\":1603210505868,\"endTimeMillis\":1606919775222,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"preContext\":\":: deploymentStage=\",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Versions par environnement (max on period)",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606916632178,\"endTimeMillis\":1606920232177,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true}],\"field\":{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"displayName\":\"AppReleaseMgmt_appVersion\",\"displayNamespace\":\"Unknown\"}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true},\"piqlFunctionField\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"fieldConstraints\":[],\"supplementalConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3lmv4wm2lmorsxe000\",\"operator\":\"CONTAINS\",\"value\":\"Alex\"}],\"groupByFields\":[{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"AppReleaseMgmt_appName\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"AppReleaseMgmt_appName\",\"preContext\":\":: appName=\",\"postContext\":\" :: appVersion\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_appVersion\",\"preContext\":\":: appVersion=\",\"postContext\":\" :: appReleaseStrategy\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"preContext\":\":: deploymentStage=\",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_keyfilter\",\"preContext\":\":: keyFilter=\",\"postContext\":\" :: appName\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3lmv4wm2lmorsxe000\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Release strategy",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"Alex\",\"startTimeMillis\":1603210505868,\"endTimeMillis\":1606919744380,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"AppReleaseMgmt_appReleaseStrategy\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfezlmmvqxgzktorzgc5dfm54q0000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"AppReleaseMgmt_appReleaseStrategy\",\"preContext\":\":: appReleaseStrategy=\",\"postContext\":\" :: deploymentStage\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfezlmmvqxgzktorzgc5dfm54q0000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Version des environnements",
+          "info":"",
+          "chartType":"column",
+          "chartOptions":"{}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606915655293,\"endTimeMillis\":1606919255292,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true}],\"field\":{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"displayName\":\"AppReleaseMgmt_appVersion\",\"displayNamespace\":\"Unknown\"}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true},\"piqlFunctionField\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"fieldConstraints\":[],\"supplementalConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3lmv4wm2lmorsxe000\",\"operator\":\"CONTAINS\",\"value\":\"Alex\"}],\"groupByFields\":[{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"AppReleaseMgmt_appVersion\",\"preContext\":\":: appVersion=\",\"postContext\":\" :: appReleaseStrategy\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"preContext\":\":: deploymentStage=\",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_keyfilter\",\"preContext\":\":: keyFilter=\",\"postContext\":\" :: appName\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3lmv4wm2lmorsxe000\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Passage en Prod des applications",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":"{\"spline\":false,\"legend\":true,\"stacking\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606917013911,\"endTimeMillis\":1606920614025,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true}],\"field\":{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"displayName\":\"AppReleaseMgmt_appVersion\",\"displayNamespace\":\"Unknown\"}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true},\"piqlFunctionField\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"fieldConstraints\":[],\"supplementalConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"operator\":\"CONTAINS\",\"value\":\"prod\"}],\"groupByFields\":[{\"displayName\":\"AppReleaseMgmt_appName\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"AppReleaseMgmt_appName\",\"preContext\":\":: appName=\",\"postContext\":\" :: appVersion\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_appVersion\",\"preContext\":\":: appVersion=\",\"postContext\":\" :: appReleaseStrategy\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"preContext\":\":: deploymentStage=\",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Passage en PreProd des applications",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":"{\"spline\":false,\"legend\":true,\"stacking\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606916985891,\"endTimeMillis\":1606920585972,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true}],\"field\":{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"displayName\":\"AppReleaseMgmt_appVersion\",\"displayNamespace\":\"Unknown\"}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true},\"piqlFunctionField\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"fieldConstraints\":[],\"supplementalConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"operator\":\"CONTAINS\",\"value\":\"preprod\"}],\"groupByFields\":[{\"displayName\":\"AppReleaseMgmt_appName\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"AppReleaseMgmt_appName\",\"preContext\":\":: appName=\",\"postContext\":\" :: appVersion\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_appVersion\",\"preContext\":\":: appVersion=\",\"postContext\":\" :: appReleaseStrategy\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"preContext\":\":: deploymentStage=\",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Passage en Test des applications",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":"{\"spline\":false,\"legend\":true,\"stacking\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606916944808,\"endTimeMillis\":1606920544965,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true}],\"field\":{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"displayName\":\"AppReleaseMgmt_appVersion\",\"displayNamespace\":\"Unknown\"}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true},\"piqlFunctionField\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"fieldConstraints\":[],\"supplementalConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"operator\":\"CONTAINS\",\"value\":\"test\"}],\"groupByFields\":[{\"displayName\":\"AppReleaseMgmt_appName\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"AppReleaseMgmt_appName\",\"preContext\":\":: appName=\",\"postContext\":\" :: appVersion\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_appVersion\",\"preContext\":\":: appVersion=\",\"postContext\":\" :: appReleaseStrategy\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"preContext\":\":: deploymentStage=\",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Versions dans le Temps",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":"{\"spline\":false,\"legend\":true,\"stacking\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1606916631687,\"endTimeMillis\":1606920232177,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true}],\"field\":{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"displayName\":\"AppReleaseMgmt_appVersion\",\"displayNamespace\":\"Unknown\"}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Max\",\"value\":\"MAX\",\"requiresField\":true,\"numericOnly\":true},\"piqlFunctionField\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"fieldConstraints\":[],\"supplementalConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3lmv4wm2lmorsxe000\",\"operator\":\"CONTAINS\",\"value\":\"Alex\"}],\"groupByFields\":[{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"AppReleaseMgmt_appName\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"AppReleaseMgmt_appName\",\"preContext\":\":: appName=\",\"postContext\":\" :: appVersion\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobye4ylnmu000000\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_appVersion\",\"preContext\":\":: appVersion=\",\"postContext\":\" :: appReleaseStrategy\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3bobyfmzlsonuw63q0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_deploymentStage\",\"preContext\":\":: deploymentStage=\",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3emvygy33znvsw45ctorqwozi0\",\"constraints\":null},{\"displayName\":\"AppReleaseMgmt_keyfilter\",\"preContext\":\":: keyFilter=\",\"postContext\":\" :: appName\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbobyfezlmmvqxgzknm5wxix3lmv4wm2lmorsxe000\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      } ]
+    }, {
+      "name":"Alex my VSAN",
+      "constraints":[ {
+        "internalName":"__li_source_path",
+        "operator":"CONTAINS"
+      }, {
+        "internalName":"hostname",
+        "operator":"CONTAINS"
+      } ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"All vSphere events",
+          "info":"The total number of events received over time. An increase in events may point to a change in the environment. A large increase in events may be an indication of an issue in the environment.<br><br><span style=\"font-weight: bold;\">Note:</span> Gaps in data indicate that no events were received during that time. Data may not have been received for a variety of reasons including inactivity in the environment or a connectivity issue between the client and the server. Unless large and/or frequent gaps are seen for several minutes of time there is no need for concern.",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1607958031677,\"endTimeMillis\":1607958332650,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null},{\"functions\":[{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false}],\"field\":{\"internalName\":\"hostname\",\"displayName\":\"hostname\",\"displayNamespace\":null}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"SUMMARY\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"hostd*,vmkwarning,sfcb-cimxml-processor,imageconfigmanager,rhttpproxy,vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"is ft primary\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"All vSphere events by hostname",
+          "info":"The total number of events received by hostname. A larger number of events on a subset of hosts may point to a change within the environment or an issue on the subset of hosts.<br>",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1429270140689,\"endTimeMillis\":1429273740688,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"hostd*,vpxa,vobd,vmkernel,vmkwarning,sfcb-cimxml-processor,imageconfigmanager,rhttpproxy,vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"is ft primary\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"hostname\",\"internalName\":\"hostname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"vSphere error events",
+          "info":"The total number of error events received over time. An increase in events may point to a change in the environment. A large increase in events may be an indication of an issue in the environment.<br><br><span style=\"font-weight: bold;\">Note:</span> Gaps in data indicate that no events were received during that time. Data may not have been received for a variety of reasons including inactivity in the environment or a connectivity issue between the client and the server. Unless large and/or frequent gaps are seen for several minutes of time there is no need for concern.<br>",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1505769730244,\"endTimeMillis\":1505770030243,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null},{\"functions\":[{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false}],\"field\":{\"internalName\":\"hostname\",\"displayName\":\"hostname\",\"displayNamespace\":null}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"hostd*,vpxa,vobd,vmkernel,vmkwarning,sfcb-cimxml-processor,imageconfigmanager,rhttpproxy,vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"error,fail*,crit*\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"unable to parse, could not detect setting of sitpua, failed to crossdup fd 1, unknown port type [0]: convert to UNKNOWN\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"vSphere error events by cluster",
+          "info":"<span style=\"font-weight: bold;\">IMPORTANT:</span><span>&nbsp;This widget requires&nbsp;<a href=\"/admin/vrops\">vRealize Operations integration</a>&nbsp;to work properly.</span><br><br>The total number of error events received over time. An increase in events may point to a change in the environment. A large increase in events may be an indication of an issue in the environment.<br><br><span style=\"font-weight: bold;\">Note:</span> Gaps in data indicate that no events were received during that time. Data may not have been received for a variety of reasons including inactivity in the environment or a connectivity issue between the client and the server. Unless large and/or frequent gaps are seen for several minutes of time there is no need for concern.<br>",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501473666419,\"endTimeMillis\":1505770620479,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"hostd*,vpxa,vobd,vmkernel,vmkwarning,sfcb-cimxml-processor,imageconfigmanager,rhttpproxy,vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"error,fail*,crit*\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"unable to parse, could not detect setting of sitpua, failed to crossdup fd 1, unknown port type [0]: convert to UNKNOWN\"},{\"internalName\":\"vmw_cluster\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_cluster\",\"internalName\":\"vmw_cluster\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"vSphere warning events",
+          "info":"The total number of warning events received over time. An increase in events may point to a change in the environment. A large increase in events may be an indication of an issue in the environment.<br><br><span style=\"font-weight: bold;\">Note:</span> Gaps in data indicate that no events were received during that time. Data may not have been received for a variety of reasons including inactivity in the environment or a connectivity issue between the client and the server. Unless large and/or frequent gaps are seen for several minutes of time there is no need for concern.<br>",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"warning\",\"startTimeMillis\":1501473666419,\"endTimeMillis\":1505770788100,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null},{\"functions\":[{\"label\":\"Unique count\",\"value\":\"UCOUNT\",\"requiresField\":true,\"numericOnly\":false}],\"field\":{\"internalName\":\"hostname\",\"displayName\":\"hostname\",\"displayNamespace\":null}}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"hostd*,vpxa,vobd,vmkernel,vmkwarning,sfcb-cimxml-processor,imageconfigmanager,rhttpproxy,vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"failed to crossdup fd 1\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"vSphere warning events by cluster",
+          "info":"<span><span style=\"font-weight: bold;\">IMPORTANT:</span><span>&nbsp;This widget requires&nbsp;<a href=\"/admin/vrops\">vRealize Operations integration</a>&nbsp;to work properly.</span><br></span><br>The total number of warning events received over time. An increase in events may point to a change in the environment. A large increase in events may be an indication of an issue in the environment.<br><br><span style=\"font-weight: bold;\">Note:</span> Gaps in data indicate that no events were received during that time. Data may not have been received for a variety of reasons including inactivity in the environment or a connectivity issue between the client and the server. Unless large and/or frequent gaps are seen for several minutes of time there is no need for concern.<br>",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":true}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"warning\",\"startTimeMillis\":1501473666419,\"endTimeMillis\":1505771150241,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"hostd*,vpxa,vobd,vmkernel,vmkwarning,sfcb-cimxml-processor,imageconfigmanager,rhttpproxy,vcenter-server\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"failed to crossdup fd 1\"},{\"internalName\":\"vmw_cluster\",\"operator\":\"EXISTS\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"vmw_cluster\",\"internalName\":\"vmw_cluster\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Relevant vSphere queries",
+          "info":"Detailed queries related to common vSphere issues.<br>",
+          "gridWidth":"1/2",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"list",
+          "listType":"query",
+          "listData":[ {
+            "name":"vSphere warning events by hostname",
+            "chartQuery":"{\"query\":\"warning\",\"startTimeMillis\":1501473666419,\"endTimeMillis\":1505771406680,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"hostd*,vpxa,vobd,vmkernel,vmkwarning,sfcb-cimxml-processor,imageconfigmanager,rhttpproxy\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"failed to crossdup fd 1, Please see the VMkernel log for detailed error information, despite the error, Found Advanced Error Reporting support\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"hostname\",\"internalName\":\"hostname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+            "messageQuery":"",
+            "info":"The total number of warning events received by hostname.&nbsp;<br><br>• A large number events may point to a change on a host or may be an indication of an issue on a host.&nbsp;<br>• A larger number on one or more hosts compared to other hosts may point to an issue on a subset of hosts.&nbsp;<br>",
+            "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"pielabelstyle\\\":\\\"legend\\\",\\\"piepercentage\\\":false,\\\"piestyle\\\":\\\"normal\\\"}\"}"
+          }, {
+            "name":"vSphere error events by hostname",
+            "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1501473666419,\"endTimeMillis\":1505771542459,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"appname\",\"operator\":\"STARTS_WITH\",\"value\":\"hostd*,vpxa,vobd,vmkernel,vmkwarning,sfcb-cimxml-processor,imageconfigmanager,rhttpproxy\"},{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"error,fail*,crit*\"},{\"internalName\":\"text\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"unable to parse, could not detect setting of sitpua, failed to crossdup fd 1, unknown port type [0]: convert to UNKNOWN\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"hostname\",\"internalName\":\"hostname\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+            "messageQuery":"",
+            "info":"The total number of error events received by hostname.&nbsp;<br><br>• A large number events may point to a change on a host or may be an indication of an issue on a host.&nbsp;<br>• A larger number on one or more hosts compared to other hosts may point to an issue on a subset of hosts.&nbsp;<br>",
+            "options":"{\"chartTypeName\":null,\"chartOptions\":\"{\\\"logaxis\\\":false,\\\"pielabelstyle\\\":\\\"legend\\\",\\\"piepercentage\\\":false,\\\"piestyle\\\":\\\"normal\\\"}\"}"
+          } ]
+        } ]
+      } ]
+    }, {
+      "name":"Docaposte",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Events over time",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1619093248425,\"endTimeMillis\":1619096848796,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"docaposte_demo\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Events over time",
+          "info":"",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1619093248425,\"endTimeMillis\":1619096848796,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"docaposte_demo\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_msg_col",
+            "displayName":"__li_msg_col",
+            "displayNamespace":null
+          } ]
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Plateforme",
+          "info":"VM - Hybride ou containers",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1619093506482,\"endTimeMillis\":1619097106481,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"docaposte_demo\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Doca-Type\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63ken5rwclkupfygk000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Doca-Type\",\"preContext\":\"DOCAPOSTE_DEMO :: \",\"postContext\":\" :: action\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63ken5rwclkupfygk000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Actions",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1619093506482,\"endTimeMillis\":1619097106481,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"docaposte_demo\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Doca-Action\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63ken5rwclkbmn2gs33o\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Doca-Action\",\"preContext\":\" :: action=\",\"postContext\":\"\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63ken5rwclkbmn2gs33o\",\"constraints\":\"{\\\"searchTerms\\\":\\\"DOCAPOSTE_DEMO\\\"}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"Actions - Tab",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1619093870394,\"endTimeMillis\":1619097470566,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"docaposte_demo\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Doca-Action\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63ken5rwclkbmn2gs33o\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Doca-Action\",\"preContext\":\" :: action=\",\"postContext\":\"\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63ken5rwclkbmn2gs33o\",\"constraints\":\"{\\\"searchTerms\\\":\\\"DOCAPOSTE_DEMO\\\"}\"}]}",
+          "messageQuery":""
+        } ]
+      } ]
+    }, {
+      "name":"K8S AUDIT",
+      "constraints":[ {
+        "internalName":"__li_source_path",
+        "operator":"CONTAINS"
+      } ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"K8S Log Volume (Basé sur la policy kubernetes !!!)",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"area",
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1624265633375,\"endTimeMillis\":1624265933448,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Pods créés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623938736812,\"endTimeMillis\":1624025137493,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Pods supprimés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623938752899,\"endTimeMillis\":1624025153391,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"},{\"internalName\":\"user_username\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"system:node\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Services Créés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623852231089,\"endTimeMillis\":1624025031857,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        }, {
+          "name":"Services supprimés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"fourranges\":{\"ranges\":[\"\",\"\",\"\",\"\"]}}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623852267276,\"endTimeMillis\":1624025067301,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":null
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Pods créés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623849827263,\"endTimeMillis\":1624022627262,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Services créés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623936486972,\"endTimeMillis\":1624022886971,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Pods supprimés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1603210505868,\"endTimeMillis\":1624022787242,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"pods\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"},{\"internalName\":\"user_username\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"system:node\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Services supprimés",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623936640143,\"endTimeMillis\":1624023040142,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"success\"},{\"internalName\":\"objectref_resource\",\"operator\":\"CONTAINS\",\"value\":\"services\"},{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"delete\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Autres ressources créés  (hors pods et services)",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623937013591,\"endTimeMillis\":1624023413590,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events,services,pods\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"requesturi\",\"operator\":\"CONTAINS\",\"value\":\"kubectl-create,kubectl-run\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Type de ressources créés (hors pods et services)",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623937648814,\"endTimeMillis\":1624024049360,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"verb\",\"operator\":\"CONTAINS\",\"value\":\"create\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events,services,pods\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"requesturi\",\"operator\":\"CONTAINS\",\"value\":\"kubectl-create,kubectl-run\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"failure\"},{\"internalName\":\"stage\",\"operator\":\"CONTAINS\",\"value\":\"responsecomplete\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"K8S - Tâches Failed",
+          "info":"",
+          "gridWidth":"1/2",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"legend\":true,\"stacking\":\"normal\",\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1623851330144,\"endTimeMillis\":1624024130143,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"verb\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"get,list,watch,patch\"},{\"internalName\":\"objectref_resource\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"leases,subjectaccessreviews,tokenreviews,serviceaccounts,events,endpoints\"},{\"internalName\":\"filepath\",\"operator\":\"CONTAINS\",\"value\":\"/var/log/kubernetes/apiserver/audit.log\"},{\"internalName\":\"responsestatus_status\",\"operator\":\"CONTAINS\",\"value\":\"failure\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"responsestatus_reason\",\"internalName\":\"responsestatus_reason\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"verb\",\"internalName\":\"verb\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_name\",\"internalName\":\"objectref_name\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_resource\",\"internalName\":\"objectref_resource\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"objectref_namespace\",\"internalName\":\"objectref_namespace\",\"displayNamespace\":null,\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        } ]
+      } ]
+    }, {
+      "name":"Salt Overview",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Salt Execution Over Time",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"trendline\":false,\"spline\":false}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\\\"Salt Execution\\\"\",\"startTimeMillis\":1638190463585,\"endTimeMillis\":1638194063584,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":""
+        }, {
+          "name":"Count module/function Executed",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638190605869,\"endTimeMillis\":1638194205868,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"Salt Execution\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-Function\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-Function\",\"preContext\":\"Function: \",\"postContext\":\"\\\\, StateFile\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Count of StateFile Execution",
+          "info":"",
+          "chartType":"column",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"normal\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638191407773,\"endTimeMillis\":1638195007772,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"Salt Execution\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-StateFile\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"Alex-Salt-IsSuccess\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-StateFile\",\"preContext\":\"StateFile: \",\"postContext\":\", Minion\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Execution - Minion Distribution",
+          "info":"",
+          "chartType":null,
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"normal\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\\\"Salt Execution\\\"\",\"startTimeMillis\":1638191574186,\"endTimeMillis\":1638195175048,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-Minion\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"Alex-Salt-IsSuccess\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-Minion\",\"preContext\":\"Minion: \",\"postContext\":\"\\\\, IsSuccess\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Minion or Master Returner",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"Salt Execution\",\"startTimeMillis\":1638183091423,\"endTimeMillis\":1638787891422,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-ReturnerKind\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilksmv2hk4tomvzew2lomq000000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-ReturnerKind\",\"preContext\":\"ReturnerKind: \",\"postContext\":\"\\\\, Function\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilksmv2hk4tomvzew2lomq000000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Masters",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"inline\",\"piepercentage\":true,\"piestyle\":\"donut\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638781906441,\"endTimeMillis\":1638954707186,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"text\",\"operator\":\"CONTAINS\",\"value\":\"salt execution\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-Master\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknmfzxizls\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-Master\",\"preContext\":\"ParentMaster: \",\"postContext\":\", ReturnerKind\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknmfzxizls\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Events",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\\\"Salt Execution\\\"\",\"startTimeMillis\":1638977358398,\"endTimeMillis\":1639063759306,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_source_path",
+            "displayName":"source",
+            "displayNamespace":null
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000",
+            "displayName":"Alex-Salt-StateFile",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilksmv2hk4tomvzew2lomq000000",
+            "displayName":"Alex-Salt-ReturnerKind",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o",
+            "displayName":"Alex-Salt-Minion",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000",
+            "displayName":"Alex-Salt-IsSuccess",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000",
+            "displayName":"Alex-Salt-Function",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknmfzxizls",
+            "displayName":"Alex-Salt-Master",
+            "displayNamespace":"Unknown"
+          } ]
+        } ]
+      } ]
+    }, {
+      "name":"Salt Troubleshooting",
+      "constraints":[ ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"State file Success /Failure / Timeout",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":"bubble",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":true,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638892972252,\"endTimeMillis\":1639065772455,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"operator\":\"CONTAINS\",\"value\":\"false,Timeout,True\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"Alex-Salt-StateFile\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-StateFile\",\"preContext\":\"StateFile: \",\"postContext\":\", Minion\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Is Salt Execution successful ratio",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638893311588,\"endTimeMillis\":1639066112393,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"operator\":\"CONTAINS\",\"value\":\"false,true,timeout\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"Unsuccessful Execution By Master",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638893266358,\"endTimeMillis\":1639066067101,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"operator\":\"CONTAINS\",\"value\":\"false,timeout\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-Master\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknmfzxizls\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-Master\",\"preContext\":\"ParentMaster: \",\"postContext\":\", ReturnerKind\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknmfzxizls\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Top Function returning \"False\"",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638892601149,\"endTimeMillis\":1639065402810,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"operator\":\"CONTAINS\",\"value\":\"false\"},{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"runner.state.event\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-Function\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-Function\",\"preContext\":\"Function: \",\"postContext\":\"\\\\, StateFile\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000\",\"constraints\":null},{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"}]}",
+          "messageQuery":""
+        }, {
+          "name":"Top State File returning \"False\"",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1619110720233,\"endTimeMillis\":1639065293534,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"operator\":\"CONTAINS\",\"value\":\"false\"},{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"runner.state.event\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-StateFile\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-Function\",\"preContext\":\"Function: \",\"postContext\":\"\\\\, StateFile\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000\",\"constraints\":null},{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-StateFile\",\"preContext\":\"StateFile: \",\"postContext\":\", Minion\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Top Minions returning \"False\"",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638892377701,\"endTimeMillis\":1639065177943,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"operator\":\"CONTAINS\",\"value\":\"false\"},{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000\",\"operator\":\"DOES_NOT_CONTAIN\",\"value\":\"runner.state.event\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-Minion\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-Function\",\"preContext\":\"Function: \",\"postContext\":\"\\\\, StateFile\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000\",\"constraints\":null},{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-Minion\",\"preContext\":\"Minion: \",\"postContext\":\"\\\\, IsSuccess\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Top Minions with Timeout (SSC only)",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638892181218,\"endTimeMillis\":1639064981881,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"operator\":\"CONTAINS\",\"value\":\"timeout\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-Minion\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-Minion\",\"preContext\":\"Minion: \",\"postContext\":\"\\\\, IsSuccess\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Unsuccessful or Timeout",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638892034224,\"endTimeMillis\":1639064834926,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"operator\":\"CONTAINS\",\"value\":\"False,timeout\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"}]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_source_path",
+            "displayName":"source",
+            "displayNamespace":null
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000",
+            "displayName":"Alex-Salt-StateFile",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilksmv2hk4tomvzew2lomq000000",
+            "displayName":"Alex-Salt-ReturnerKind",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o",
+            "displayName":"Alex-Salt-Minion",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000",
+            "displayName":"Alex-Salt-IsSuccess",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000",
+            "displayName":"Alex-Salt-Function",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknmfzxizls",
+            "displayName":"Alex-Salt-Master",
+            "displayNamespace":"Unknown"
+          } ]
+        } ]
+      } ]
+    }, {
+      "name":"Salt Security",
+      "constraints":[ {
+        "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000",
+        "operator":"CONTAINS"
+      } ],
+      "rows":[ {
+        "widgets":[ {
+          "name":"Vulnerability Assessment Result",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"inline\",\"piepercentage\":true,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1619040818642,\"endTimeMillis\":1639064436091,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"operator\":\"CONTAINS\",\"value\":\"vman.policy_assess*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-StateFile\",\"preContext\":\"StateFile: \",\"postContext\":\", Minion\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Vulnerability assesment status",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638970483189,\"endTimeMillis\":1638974083188,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"operator\":\"CONTAINS\",\"value\":\"vman.policy_assess*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"Alex-Salt-Minion\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-Minion\",\"preContext\":\"Minion: \",\"postContext\":\"\\\\, IsSuccess\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"constraints\":null},{\"displayName\":\"Alex-Salt-StateFile\",\"preContext\":\"StateFile: \",\"postContext\":\", Minion\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Compliance Assessment Result",
+          "info":"",
+          "chartType":"pie",
+          "chartOptions":"{\"logaxis\":false,\"pielabelstyle\":\"inline\",\"piepercentage\":true,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1619040818642,\"endTimeMillis\":1639064508403,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"operator\":\"CONTAINS\",\"value\":\"locke.policy_assess*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-StateFile\",\"preContext\":\"StateFile: \",\"postContext\":\", Minion\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"constraints\":null}]}",
+          "messageQuery":""
+        }, {
+          "name":"Compliance assessment status",
+          "info":"",
+          "chartType":"number",
+          "chartOptions":"{\"logaxis\":false,\"doublegroupbymultiseries\":true,\"legend\":true,\"swapfields\":false,\"doublegroupbystacking\":\"none\",\"pielabelstyle\":\"legend\",\"piepercentage\":false,\"piestyle\":\"normal\"}",
+          "widgetType":"chart",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638970969949,\"endTimeMillis\":1638974569948,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":false,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"EVENTS\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"operator\":\"CONTAINS\",\"value\":\"locke.policy_assess*\"}],\"supplementalConstraints\":[],\"groupByFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null},{\"displayName\":\"Alex-Salt-Minion\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"displayNamespace\":\"Unknown\",\"numericGroupByType\":\"EACH_VALUE\",\"numericGroupByValue\":null}],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-IsSuccess\",\"preContext\":\"IsSuccess: \",\"postContext\":\"\",\"regexValue\":\"\\\\w+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000\",\"constraints\":\"{\\\"searchTerms\\\":\\\"\\\"}\"},{\"displayName\":\"Alex-Salt-Minion\",\"preContext\":\"Minion: \",\"postContext\":\"\\\\, IsSuccess\",\"regexValue\":\"\\\\S+\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o\",\"constraints\":null},{\"displayName\":\"Alex-Salt-StateFile\",\"preContext\":\"StateFile: \",\"postContext\":\", Minion\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"constraints\":null}]}",
+          "messageQuery":""
+        } ]
+      }, {
+        "widgets":[ {
+          "name":"Events",
+          "info":"",
+          "gridWidth":"1",
+          "chartType":null,
+          "chartOptions":null,
+          "widgetType":"fieldTable",
+          "chartQuery":"{\"query\":\"\",\"startTimeMillis\":1638978307164,\"endTimeMillis\":1639064707163,\"piqlFunctionGroups\":[{\"functions\":[{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false}],\"field\":null}],\"dateFilterPreset\":\"CUSTOM\",\"shouldGroupByTime\":true,\"includeAllContentPackFields\":true,\"eventSortOrder\":\"DESC\",\"summarySortOrder\":\"DESC\",\"compareQueryOrderBy\":\"TREND\",\"compareQuerySortOrder\":\"DESC\",\"compareQueryOptions\":null,\"messageViewType\":\"FIELD_TABLE\",\"constraintToggle\":\"ALL\",\"piqlFunction\":{\"label\":\"Count\",\"value\":\"COUNT\",\"requiresField\":false,\"numericOnly\":false},\"piqlFunctionField\":null,\"fieldConstraints\":[{\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"operator\":\"CONTAINS\",\"value\":\"locke.policy_assess,vman.policy_assess\"}],\"supplementalConstraints\":[],\"groupByFields\":[],\"contentPacksToIncludeFields\":[],\"extractedFields\":[{\"displayName\":\"Alex-Salt-StateFile\",\"preContext\":\"StateFile: \",\"postContext\":\", Minion\",\"regexValue\":\".*\",\"internalName\":\"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000\",\"constraints\":null}]}",
+          "messageQuery":"",
+          "columns":[ {
+            "internalName":"__li_timestamp_col",
+            "displayName":"__li_timestamp_col",
+            "displayNamespace":null
+          }, {
+            "internalName":"__li_source_path",
+            "displayName":"source",
+            "displayNamespace":null
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilktorqxizkgnfwgk000",
+            "displayName":"Alex-Salt-StateFile",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilksmv2hk4tomvzew2lomq000000",
+            "displayName":"Alex-Salt-ReturnerKind",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknnfxgs33o",
+            "displayName":"Alex-Salt-Minion",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkjonjxky3dmvzxg000",
+            "displayName":"Alex-Salt-IsSuccess",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilkgovxgg5djn5xa0000",
+            "displayName":"Alex-Salt-Function",
+            "displayNamespace":"Unknown"
+          }, {
+            "internalName":"ibadcok7knqwy5bonrxwgylmfzzwq33xojxw63kbnrsxqlktmfwhilknmfzxizls",
+            "displayName":"Alex-Salt-Master",
+            "displayNamespace":"Unknown"
+          } ]
+        } ]
+      } ]
+    } ],
+    "header":""
+  } ],
+  "agentClasses":[ {
+    "name":"Linux - Systemd - cpodrouter - Tito VMs - Kubernetes",
+    "info":"This configuration created for delivering logs which have been generated via journald service.",
+    "agentConfig":"[journaldlog|journal_config]\njournal_files=all\ntags={\"generator\":\"journald\"}\nenabled=no\n\n[filelog|audit_Historique]\ndirectory=/root/\ninclude=.bash_history\ntags={\"audit\":\"bash_history\"}\nenabled=no\n\n[filelog|showroomDNS]\ndirectory=/root/alex\ninclude=dns.log\nenabled=yes\n\n[filelog|Tito_VM]\ndirectory=/var/log/httpd\ninclude=error_log\ntags={\"Tito_platform\":\"VM\"}\n\n[filelog|Tito_K8S]\ndirectory=/var/lib/docker/containers/*\ninclude=*.log\ntags={\"Tito_platform\":\"K8S\"}\n\n[filelog|audit_K8S]\ndirectory=/var/log/kubernetes/apiserver\ninclude=audit.log\nenabled=yes\ntags={\"kubernetes\":\"audit-apiserver\"}\nparser=json\n"
+  } ],
+  "aliasFields":[ ],
+  "aliasRules":[ ],
+  "author":"",
+  "url":"",
+  "contentVersion":"1.0"
+}
